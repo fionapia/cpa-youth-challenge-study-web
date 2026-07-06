@@ -6,7 +6,9 @@
 
 1. 在 Supabase 新建项目。
 2. 打开 SQL Editor，执行 `supabase-schema.sql`。
-3. 在 Authentication 的 URL 配置里加入本地测试地址和 GitHub Pages 地址。
+3. 在 Authentication 的 URL 配置里加入本地测试地址和 GitHub Pages 地址：
+   - `http://127.0.0.1:4173/刷题网页/index.html`
+   - `https://fionapia.github.io/cpa-youth-challenge-study-web/`
 
 ## 2. 填写前端配置
 
