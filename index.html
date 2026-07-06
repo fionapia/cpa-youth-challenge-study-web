@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAQH 刷题库</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">D</div>
+        <span>DAQH</span>
+      </div>
+      <nav class="nav" aria-label="主导航">
+        <button class="nav-item active" data-view="home">首页</button>
+        <button class="nav-item" data-view="practice">刷题</button>
+        <button class="nav-item" data-view="mistakes">错题本</button>
+        <button class="nav-item" data-view="records">答题记录</button>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="view active" id="view-home">
+        <section class="hero">
+          <h1>欢迎回来</h1>
+          <p>继续你的学习之旅，提升技能水平</p>
+        </section>
+
+        <section class="sync-panel" aria-label="跨设备同步">
+          <div>
+            <h2>跨设备同步</h2>
+            <p id="sync-status">本地记录已保存。配置 Supabase 后可开启电脑和手机同步。</p>
+          </div>
+          <form class="sync-form" id="sync-form">
+            <input type="email" id="sync-email" placeholder="输入邮箱开启同步" autocomplete="email" />
+            <button class="primary-btn" type="submit">开启同步</button>
+          </form>
+          <div class="sync-actions" id="sync-actions" hidden>
+            <span id="sync-user"></span>
+            <button class="ghost-btn" id="sync-now" type="button">立即同步</button>
+            <button class="ghost-btn" id="sync-signout" type="button">退出同步</button>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="刷题统计">
+          <article class="stat-card">
+            <div class="stat-icon purple">□</div>
+            <div>
+              <strong id="stat-total">0</strong>
+              <span>总答题数</span>
+            </div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon green">✓</div>
+            <div>
+              <strong id="stat-correct">0</strong>
+              <span>答对题数</span>
+            </div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon orange">×</div>
+            <div>
+              <strong id="stat-wrong">0</strong>
+              <span>错题数</span>
+            </div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon blue">↗</div>
+            <div>
+              <strong id="stat-rate">0%</strong>
+              <span>正确率</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="category-head">
+          <h2>选择分类开始刷题</h2>
+          <div class="notice">题库题目由 AI 生成仅供参考，刷题无强制要求，可按需练习，系统如有问题请反馈</div>
+        </section>
+
+        <section class="category-grid" id="category-grid"></section>
+      </section>
+
+      <section class="view" id="view-practice">
+        <div class="practice-layout">
+          <aside class="side-panel">
+            <h2>刷题设置</h2>
+            <label class="field">
+              <span>练习分类</span>
+              <select id="category-select"></select>
+            </label>
+            <label class="field">
+              <span>题型</span>
+              <select id="type-select">
+                <option value="all">全部题型</option>
+                <option value="single">单选题</option>
+                <option value="multiple">多选题</option>
+                <option value="judge">判断题</option>
+              </select>
+            </label>
+            <div class="side-actions">
+              <button class="primary-btn" id="start-practice">开始练习</button>
+              <button class="ghost-btn" id="shuffle-practice">随机练习</button>
+            </div>
+            <div class="mini-stats">
+              <span id="pool-count">0 题可练</span>
+              <span id="current-progress">第 0 / 0 题</span>
+            </div>
+          </aside>
+
+          <section class="question-card" id="question-card">
+            <div class="empty-state">
+              <h2>选择分类后开始刷题</h2>
+              <p>建议先刷机考冲刺题，再回到全量题库查漏补缺。</p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="view-mistakes">
+        <div class="page-title">
+          <h1>错题本</h1>
+          <button class="ghost-btn" id="clear-mistakes">清空错题</button>
+        </div>
+        <div class="list-panel" id="mistake-list"></div>
+      </section>
+
+      <section class="view" id="view-records">
+        <div class="page-title">
+          <h1>答题记录</h1>
+          <button class="ghost-btn" id="reset-progress">重置全部记录</button>
+        </div>
+        <div class="list-panel" id="record-list"></div>
+      </section>
+    </main>
+
+    <script src="./questions-data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./sync-config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
