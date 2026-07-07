@@ -301,6 +301,52 @@ function getFilteredQuestions() {
   });
 }
 
+function getLatestRecordByQuestionId(questionId) {
+  return state.records
+    .filter((record) => record.questionId === questionId)
+    .sort((a, b) => b.time.localeCompare(a.time))[0] || null;
+}
+
+function getQuestionStatus(question) {
+  const latestRecord = getLatestRecordByQuestionId(question.id);
+  if (!latestRecord) {
+    return { key: "unanswered", label: "未刷" };
+  }
+  return latestRecord.correct
+    ? { key: "correct", label: "最近答对" }
+    : { key: "wrong", label: "最近答错" };
+}
+
+function getProgressSummary(questionList) {
+  const answered = questionList.filter((question) => getLatestRecordByQuestionId(question.id)).length;
+  return {
+    total: questionList.length,
+    answered,
+    unanswered: questionList.length - answered,
+  };
+}
+
+function renderQuestionStatusBadge(question) {
+  const status = getQuestionStatus(question);
+  return `<span class="badge status-badge status-${status.key}" data-question-status="${escapeHtml(question.id)}">${status.label}</span>`;
+}
+
+function updateVisibleQuestionStatusBadges() {
+  document.querySelectorAll("[data-question-status]").forEach((badge) => {
+    const question = getQuestionById(badge.dataset.questionStatus);
+    if (!question) return;
+    const status = getQuestionStatus(question);
+    badge.className = `badge status-badge status-${status.key}`;
+    badge.textContent = status.label;
+  });
+}
+
+function updateProgressDisplays() {
+  renderCategories();
+  updatePoolCount();
+  updateVisibleQuestionStatusBadges();
+}
+
 function updateStats() {
   const rate = state.total ? Math.round((state.correct / state.total) * 100) : 0;
   byId("stat-total").textContent = String(state.total);
@@ -324,11 +370,14 @@ function renderCategories() {
   const grid = byId("category-grid");
   grid.innerHTML = CATEGORIES.map((category) => {
     const count = getCategoryCount(category.id);
+    const progress = getProgressSummary(
+      questions.filter((question) => category.id === "all" || questionMatchesCategory(question, category.id))
+    );
     return `
       <button class="category-card ${category.className}" data-category="${category.id}">
         <strong>${category.title}</strong>
         <span>开始练习</span>
-        <small>${count} 题</small>
+        <small>已刷 ${progress.answered} / ${count} 题</small>
       </button>
     `;
   }).join("");
@@ -354,7 +403,8 @@ function renderSelectors() {
 }
 
 function updatePoolCount() {
-  byId("pool-count").textContent = `${getFilteredQuestions().length} 题可练`;
+  const progress = getProgressSummary(getFilteredQuestions());
+  byId("pool-count").textContent = `共 ${progress.total} 题 · 已刷 ${progress.answered} 题 · 未刷 ${progress.unanswered} 题`;
 }
 
 function startPractice(shuffle) {
@@ -422,6 +472,7 @@ function renderQuestionContent(question, options = {}) {
       <span class="badge">${escapeHtml(question.categoryTitle)}</span>
       <span class="badge">${escapeHtml(TYPE_LABELS[question.type] || "题目")}</span>
       <span class="badge">${escapeHtml(question.sourceFile)}</span>
+      ${renderQuestionStatusBadge(question)}
     </div>
     <h2 class="question-title">${escapeHtml(question.section || "练习题")}</h2>
     <div class="question-stem">${escapeHtml(question.stem)}</div>
@@ -532,6 +583,7 @@ function recordAnswer(question, selected, isCorrect) {
 
   saveState();
   updateStats();
+  updateProgressDisplays();
 }
 
 function showAnswerNotice(panel, message) {
@@ -812,6 +864,7 @@ function clearMistakes() {
   saveState();
   renderMistakes();
   updateStats();
+  updateProgressDisplays();
 }
 
 function resetProgress() {
@@ -826,6 +879,7 @@ function resetProgress() {
   resetMistakeAnswerState();
   saveState();
   updateStats();
+  updateProgressDisplays();
   renderRecords();
   renderMistakes();
 }
@@ -1088,6 +1142,7 @@ function mergeNotes(localNotes, cloudNotes, mergedMeta, latestResetAt) {
 
 function refreshCurrentView() {
   updateStats();
+  updateProgressDisplays();
   if (document.getElementById("view-mistakes")?.classList.contains("active")) renderMistakes();
   if (document.getElementById("view-records")?.classList.contains("active")) renderRecords();
   document.querySelectorAll("[data-note-question-id]").forEach((textarea) => {

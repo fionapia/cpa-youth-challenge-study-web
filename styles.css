@@ -475,6 +475,25 @@ select {
   font-size: 14px;
 }
 
+.status-badge {
+  font-weight: 700;
+}
+
+.status-unanswered {
+  background: #f1f1f1;
+  color: #777;
+}
+
+.status-correct {
+  background: #e9f8ef;
+  color: #22814e;
+}
+
+.status-wrong {
+  background: #fff2df;
+  color: #b86813;
+}
+
 .question-stem {
   margin: 22px 0 26px;
   font-size: 24px;
