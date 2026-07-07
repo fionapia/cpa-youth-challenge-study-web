@@ -609,6 +609,39 @@ select {
   margin-bottom: 24px;
 }
 
+.page-title p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.page-title h1 span {
+  margin-left: 12px;
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mistake-toolbar {
+  max-width: 300px;
+  margin: 0 0 28px;
+}
+
+.mistake-card {
+  max-width: 1120px;
+}
+
+.mistake-last-answer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 15px;
+}
+
 .list-panel {
   padding: 18px;
 }
@@ -729,11 +762,25 @@ select {
     flex-direction: column;
   }
 
+  .page-title h1 span {
+    display: block;
+    margin: 8px 0 0;
+  }
+
+  .mistake-toolbar {
+    max-width: none;
+  }
+
   .side-panel {
     position: static;
   }
 
   .question-card {
     padding: 22px;
+  }
+
+  .question-actions {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

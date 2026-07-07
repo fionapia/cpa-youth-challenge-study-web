@@ -23,6 +23,10 @@ let sessionQuestions = [];
 let currentIndex = 0;
 let selectedAnswers = new Set();
 let submitted = false;
+let mistakeQuestions = [];
+let mistakeIndex = 0;
+let mistakeSelectedAnswers = new Set();
+let mistakeSubmitted = false;
 const noteSaveTimers = new Map();
 const NOTE_SAVE_DELAY = 400;
 let supabaseClient = null;
@@ -384,37 +388,14 @@ function renderQuestion() {
   }
 
   const question = sessionQuestions[currentIndex];
-  const isJudge = question.type === "judge";
-  const options = isJudge && question.options.length === 0
-    ? [
-        { key: "正确", text: "正确" },
-        { key: "错误", text: "错误" },
-      ]
-    : question.options;
-
-  card.innerHTML = `
-    <div class="question-meta">
-      <span class="badge">${question.categoryTitle}</span>
-      <span class="badge">${TYPE_LABELS[question.type] || "题目"}</span>
-      <span class="badge">${question.sourceFile}</span>
-    </div>
-    <h2 class="question-title">${escapeHtml(question.section || "练习题")}</h2>
-    <div class="question-stem">${escapeHtml(question.stem)}</div>
-    <div class="options">
-      ${options.map((option) => `
-        <button class="option" data-answer="${escapeHtml(option.key)}">
-          <span class="option-key">${escapeHtml(option.key)}</span>
-          <span>${escapeHtml(option.text)}</span>
-        </button>
-      `).join("")}
-    </div>
-    <div class="answer-panel" id="answer-panel"></div>
-    <div class="question-actions">
+  card.innerHTML = renderQuestionContent(question, {
+    answerPanelId: "answer-panel",
+    actionsHtml: `
       <button class="primary-btn" id="submit-answer">提交答案</button>
       <button class="ghost-btn" id="prev-question">上一题</button>
       <button class="ghost-btn" id="next-question">下一题</button>
-    </div>
-  `;
+    `,
+  });
 
   card.querySelectorAll(".option").forEach((button) => {
     button.addEventListener("click", () => toggleAnswer(button.dataset.answer));
@@ -424,18 +405,61 @@ function renderQuestion() {
   byId("next-question").addEventListener("click", () => moveQuestion(1));
 }
 
+function getQuestionOptions(question) {
+  if (question.type === "judge" && question.options.length === 0) {
+    return [
+      { key: "正确", text: "正确" },
+      { key: "错误", text: "错误" },
+    ];
+  }
+  return question.options;
+}
+
+function renderQuestionContent(question, options = {}) {
+  const { answerPanelId, actionsHtml } = options;
+  return `
+    <div class="question-meta">
+      <span class="badge">${escapeHtml(question.categoryTitle)}</span>
+      <span class="badge">${escapeHtml(TYPE_LABELS[question.type] || "题目")}</span>
+      <span class="badge">${escapeHtml(question.sourceFile)}</span>
+    </div>
+    <h2 class="question-title">${escapeHtml(question.section || "练习题")}</h2>
+    <div class="question-stem">${escapeHtml(question.stem)}</div>
+    <div class="options">
+      ${getQuestionOptions(question).map((option) => `
+        <button class="option" data-answer="${escapeHtml(option.key)}">
+          <span class="option-key">${escapeHtml(option.key)}</span>
+          <span>${escapeHtml(option.text)}</span>
+        </button>
+      `).join("")}
+    </div>
+    <div class="answer-panel" id="${escapeHtml(answerPanelId)}"></div>
+    <div class="question-actions">
+      ${actionsHtml}
+    </div>
+  `;
+}
+
 function toggleAnswer(answer) {
   if (submitted) return;
   const question = sessionQuestions[currentIndex];
-  if (question.type === "multiple") {
-    if (selectedAnswers.has(answer)) selectedAnswers.delete(answer);
-    else selectedAnswers.add(answer);
-  } else {
-    selectedAnswers = new Set([answer]);
-  }
+  selectedAnswers = updateSelectedAnswers(question, selectedAnswers, answer);
+  markSelectedOptions(byId("question-card"), selectedAnswers);
+}
 
-  document.querySelectorAll(".option").forEach((button) => {
-    button.classList.toggle("selected", selectedAnswers.has(button.dataset.answer));
+function updateSelectedAnswers(question, currentAnswers, answer) {
+  const nextAnswers = new Set(currentAnswers);
+  if (question.type === "multiple") {
+    if (nextAnswers.has(answer)) nextAnswers.delete(answer);
+    else nextAnswers.add(answer);
+    return nextAnswers;
+  }
+  return new Set([answer]);
+}
+
+function markSelectedOptions(root, selectedSet) {
+  root.querySelectorAll(".option").forEach((button) => {
+    button.classList.toggle("selected", selectedSet.has(button.dataset.answer));
   });
 }
 
@@ -459,14 +483,19 @@ function submitAnswer() {
   if (submitted) return;
   const question = sessionQuestions[currentIndex];
   if (!selectedAnswers.size) {
-    byId("answer-panel").className = "answer-panel show";
-    byId("answer-panel").textContent = "请先选择答案。";
+    showAnswerNotice(byId("answer-panel"), "请先选择答案。");
     return;
   }
 
   submitted = true;
   const selected = getSelectedAnswerText();
   const isCorrect = normalizeAnswer(selected) === normalizeAnswer(question.answer);
+  recordAnswer(question, selected, isCorrect);
+  markOptions(question, selected, byId("question-card"));
+  renderAnswerPanel(question, selected, isCorrect, byId("answer-panel"));
+}
+
+function recordAnswer(question, selected, isCorrect) {
   const now = new Date().toISOString();
   const clientStats = state.statsByClient[state.clientId] || {
     total: 0,
@@ -503,14 +532,17 @@ function submitAnswer() {
 
   saveState();
   updateStats();
-  markOptions(question, selected);
-  renderAnswerPanel(question, selected, isCorrect);
 }
 
-function markOptions(question, selected) {
+function showAnswerNotice(panel, message) {
+  panel.className = "answer-panel show";
+  panel.textContent = message;
+}
+
+function markOptions(question, selected, root = document) {
   const correctSet = getAnswerSet(question, question.answer);
   const selectedSet = getAnswerSet(question, selected);
-  document.querySelectorAll(".option").forEach((button) => {
+  root.querySelectorAll(".option").forEach((button) => {
     const value = button.dataset.answer;
     if (correctSet.has(value)) button.classList.add("correct");
     if (selectedSet.has(value) && !correctSet.has(value)) button.classList.add("wrong");
@@ -523,8 +555,7 @@ function getAnswerSet(question, value) {
   return new Set(normalized.split(""));
 }
 
-function renderAnswerPanel(question, selected, isCorrect) {
-  const panel = byId("answer-panel");
+function renderAnswerPanel(question, selected, isCorrect, panel = byId("answer-panel")) {
   panel.className = "answer-panel show";
   panel.innerHTML = `
     <div class="answer-summary">
@@ -620,59 +651,136 @@ function moveQuestion(step) {
   renderQuestion();
 }
 
-function renderMistakes() {
-  const list = byId("mistake-list");
-  const mistakes = Object.values(state.mistakes)
-    .map((item) => ({ ...item, question: getQuestionById(item.questionId) }))
-    .filter((item) => item.question)
-    .sort((a, b) => b.time.localeCompare(a.time));
+function resetMistakeAnswerState() {
+  mistakeSelectedAnswers = new Set();
+  mistakeSubmitted = false;
+}
 
-  if (!mistakes.length) {
-    list.innerHTML = `<div class="empty-state"><h2>暂无错题</h2><p>保持这个状态，很漂亮。</p></div>`;
+function renderMistakes() {
+  const card = byId("mistake-card");
+  const progress = byId("mistake-progress");
+  renderMistakeCategoryOptions();
+  mistakeQuestions = getFilteredMistakeQuestions();
+  if (mistakeIndex >= mistakeQuestions.length) mistakeIndex = Math.max(mistakeQuestions.length - 1, 0);
+  if (progress) {
+    progress.textContent = `第 ${mistakeQuestions.length ? mistakeIndex + 1 : 0} / ${mistakeQuestions.length} 题`;
+  }
+
+  if (!mistakeQuestions.length) {
+    const categorySelect = byId("mistake-category-select");
+    const hasAnyMistakes = getMistakeQuestions().length > 0;
+    card.innerHTML = `
+      <div class="empty-state">
+        <h2>${hasAnyMistakes ? "当前分类暂无错题" : "暂无错题"}</h2>
+        <p>${hasAnyMistakes ? "换一个分类继续复习。" : "保持这个状态，很漂亮。"}</p>
+      </div>
+    `;
+    if (categorySelect) categorySelect.disabled = !hasAnyMistakes;
     return;
   }
 
-  list.innerHTML = mistakes.map((item) => `
-    <article class="list-item">
-      <h3>${escapeHtml(item.question.stem)}</h3>
-      <p>${escapeHtml(item.question.categoryTitle)} · ${escapeHtml(TYPE_LABELS[item.question.type] || "题目")}</p>
-      <p>你的答案：${escapeHtml(item.selected)}　正确答案：${escapeHtml(item.answer)}</p>
-      <div class="official-explanation compact">
-        <strong>官方解析</strong>
-        <p>${escapeHtml(item.question.explanation || "暂无解析。")}</p>
-      </div>
-      ${renderNoteEditor(item.question.id)}
-      <div class="list-actions">
-        <button class="primary-btn" data-redo="${item.question.id}">重做此题</button>
-        <button class="ghost-btn" data-remove="${item.question.id}">移出错题本</button>
-      </div>
-    </article>
-  `).join("");
+  const question = mistakeQuestions[mistakeIndex];
+  const mistake = state.mistakes[question.id];
+  const lastTime = mistake?.time ? new Date(mistake.time).toLocaleDateString("zh-CN") : "";
+  card.innerHTML = `
+    ${renderQuestionContent(question, {
+      answerPanelId: "mistake-answer-panel",
+      actionsHtml: `
+        <button class="primary-btn" id="master-mistake">标记已掌握</button>
+        <button class="ghost-btn" id="prev-mistake">上一题</button>
+        <button class="primary-btn" id="submit-mistake-answer">提交答案</button>
+        <button class="ghost-btn" id="next-mistake">下一题</button>
+      `,
+    })}
+    <div class="mistake-last-answer">
+      <span>上次错选：${escapeHtml(mistake?.selected || "-")}</span>
+      <span>正确答案：${escapeHtml(mistake?.answer || question.answer)}</span>
+      ${lastTime ? `<span>${escapeHtml(lastTime)}</span>` : ""}
+    </div>
+  `;
 
-  list.querySelectorAll("[data-redo]").forEach((button) => {
-    button.addEventListener("click", () => redoQuestion(button.dataset.redo));
+  card.querySelectorAll(".option").forEach((button) => {
+    button.addEventListener("click", () => toggleMistakeAnswer(button.dataset.answer));
   });
-  list.querySelectorAll("[data-remove]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const questionId = button.dataset.remove;
-      delete state.mistakes[questionId];
-      state.meta.removedMistakes[questionId] = new Date().toISOString();
-      saveState();
-      renderMistakes();
-      updateStats();
-    });
-  });
-  bindNoteEditors(list);
+  byId("submit-mistake-answer").addEventListener("click", submitMistakeAnswer);
+  byId("prev-mistake").addEventListener("click", () => moveMistakeQuestion(-1));
+  byId("next-mistake").addEventListener("click", () => moveMistakeQuestion(1));
+  byId("master-mistake").addEventListener("click", markCurrentMistakeMastered);
 }
 
-function redoQuestion(questionId) {
-  const question = getQuestionById(questionId);
+function renderMistakeCategoryOptions() {
+  const select = byId("mistake-category-select");
+  if (!select) return;
+  const currentValue = select.value || "all";
+  select.innerHTML = CATEGORIES.map((category) => {
+    const count = getMistakeQuestions(category.id).length;
+    const label = category.id === "all" ? "全部分类" : category.title;
+    return `<option value="${category.id}">${label}（${count}题）</option>`;
+  }).join("");
+  select.value = CATEGORIES.some((category) => category.id === currentValue) ? currentValue : "all";
+  select.disabled = getMistakeQuestions().length === 0;
+}
+
+function getMistakeQuestions(categoryId = "all") {
+  return Object.values(state.mistakes)
+    .map((item) => ({ ...item, question: getQuestionById(item.questionId) }))
+    .filter((item) => item.question)
+    .filter((item) => categoryId === "all" || questionMatchesCategory(item.question, categoryId))
+    .sort((a, b) => b.time.localeCompare(a.time))
+    .map((item) => item.question);
+}
+
+function getFilteredMistakeQuestions() {
+  const select = byId("mistake-category-select");
+  return getMistakeQuestions(select?.value || "all");
+}
+
+function toggleMistakeAnswer(answer) {
+  if (mistakeSubmitted) return;
+  const question = mistakeQuestions[mistakeIndex];
+  mistakeSelectedAnswers = updateSelectedAnswers(question, mistakeSelectedAnswers, answer);
+  markSelectedOptions(byId("mistake-card"), mistakeSelectedAnswers);
+}
+
+function getSelectedMistakeAnswerText() {
+  return [...mistakeSelectedAnswers].sort().join("");
+}
+
+function submitMistakeAnswer() {
+  if (mistakeSubmitted) return;
+  const question = mistakeQuestions[mistakeIndex];
   if (!question) return;
-  sessionQuestions = [question];
-  currentIndex = 0;
-  resetAnswerState();
-  renderQuestion();
-  showView("practice");
+  const panel = byId("mistake-answer-panel");
+  if (!mistakeSelectedAnswers.size) {
+    showAnswerNotice(panel, "请先选择答案。");
+    return;
+  }
+
+  mistakeSubmitted = true;
+  const selected = getSelectedMistakeAnswerText();
+  const isCorrect = normalizeAnswer(selected) === normalizeAnswer(question.answer);
+  recordAnswer(question, selected, isCorrect);
+  markOptions(question, selected, byId("mistake-card"));
+  renderAnswerPanel(question, selected, isCorrect, panel);
+  byId("submit-mistake-answer").hidden = true;
+}
+
+function moveMistakeQuestion(step) {
+  if (!mistakeQuestions.length) return;
+  mistakeIndex = Math.min(Math.max(mistakeIndex + step, 0), mistakeQuestions.length - 1);
+  resetMistakeAnswerState();
+  renderMistakes();
+}
+
+function markCurrentMistakeMastered() {
+  const question = mistakeQuestions[mistakeIndex];
+  if (!question) return;
+  delete state.mistakes[question.id];
+  state.meta.removedMistakes[question.id] = new Date().toISOString();
+  saveState();
+  resetMistakeAnswerState();
+  renderMistakes();
+  updateStats();
 }
 
 function renderRecords() {
@@ -699,6 +807,8 @@ function renderRecords() {
 function clearMistakes() {
   state.mistakes = {};
   state.meta.mistakesClearedAt = new Date().toISOString();
+  mistakeIndex = 0;
+  resetMistakeAnswerState();
   saveState();
   renderMistakes();
   updateStats();
@@ -712,6 +822,8 @@ function resetProgress() {
   state.clientId = clientId;
   state.meta.resetAt = resetAt;
   state.meta.updatedAt = resetAt;
+  mistakeIndex = 0;
+  resetMistakeAnswerState();
   saveState();
   updateStats();
   renderRecords();
@@ -1000,6 +1112,11 @@ function bindEvents() {
   byId("start-practice").addEventListener("click", () => startPractice(false));
   byId("shuffle-practice").addEventListener("click", () => startPractice(true));
   byId("clear-mistakes").addEventListener("click", clearMistakes);
+  byId("mistake-category-select").addEventListener("change", () => {
+    mistakeIndex = 0;
+    resetMistakeAnswerState();
+    renderMistakes();
+  });
   byId("reset-progress").addEventListener("click", resetProgress);
   byId("sync-form").addEventListener("submit", requestSyncEmail);
   byId("sync-now").addEventListener("click", () => syncFromCloud({ pushAfterMerge: true }));

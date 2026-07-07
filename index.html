@@ -120,10 +120,16 @@
 
       <section class="view" id="view-mistakes">
         <div class="page-title">
-          <h1>错题本</h1>
+          <div>
+            <h1>错题本 <span id="mistake-progress">第 0 / 0 题</span></h1>
+            <p>复习错题，巩固薄弱知识点</p>
+          </div>
           <button class="ghost-btn" id="clear-mistakes">清空错题</button>
         </div>
-        <div class="list-panel" id="mistake-list"></div>
+        <div class="mistake-toolbar">
+          <select id="mistake-category-select" aria-label="选择错题分类"></select>
+        </div>
+        <section class="question-card mistake-card" id="mistake-card"></section>
       </section>
 
       <section class="view" id="view-records">
