@@ -294,10 +294,12 @@ function questionMatchesCategory(question, categoryId) {
 function getFilteredQuestions() {
   const category = byId("category-select").value;
   const type = byId("type-select").value;
+  const status = byId("status-select").value;
   return questions.filter((question) => {
     const categoryMatch = category === "all" || questionMatchesCategory(question, category);
     const typeMatch = type === "all" || question.type === type;
-    return categoryMatch && typeMatch;
+    const statusMatch = status === "all" || getQuestionStatus(question).key === status;
+    return categoryMatch && typeMatch && statusMatch;
   });
 }
 
@@ -386,6 +388,7 @@ function renderCategories() {
     card.addEventListener("click", () => {
       byId("category-select").value = card.dataset.category;
       byId("type-select").value = "all";
+      byId("status-select").value = "all";
       startPractice(false);
       showView("practice");
     });
@@ -399,6 +402,7 @@ function renderSelectors() {
 
   byId("category-select").addEventListener("change", updatePoolCount);
   byId("type-select").addEventListener("change", updatePoolCount);
+  byId("status-select").addEventListener("change", updatePoolCount);
   updatePoolCount();
 }
 

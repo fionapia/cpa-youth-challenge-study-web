@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DAQH 刷题库</title>
-    <link rel="stylesheet" href="./styles.css?v=20260707-progress-status" />
+    <link rel="stylesheet" href="./styles.css?v=20260707-status-filter" />
   </head>
   <body>
     <header class="topbar">
@@ -99,6 +99,15 @@
                 <option value="judge">判断题</option>
               </select>
             </label>
+            <label class="field">
+              <span>练习范围</span>
+              <select id="status-select">
+                <option value="all">全部题目</option>
+                <option value="unanswered">只刷未刷</option>
+                <option value="wrong">只看最近答错</option>
+                <option value="correct">只看最近答对</option>
+              </select>
+            </label>
             <div class="side-actions">
               <button class="primary-btn" id="start-practice">开始练习</button>
               <button class="ghost-btn" id="shuffle-practice">随机练习</button>
@@ -141,9 +150,9 @@
       </section>
     </main>
 
-    <script src="./questions-data.js?v=20260707-progress-status"></script>
+    <script src="./questions-data.js?v=20260707-status-filter"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="./sync-config.js?v=20260707-progress-status"></script>
-    <script src="./app.js?v=20260707-progress-status"></script>
+    <script src="./sync-config.js?v=20260707-status-filter"></script>
+    <script src="./app.js?v=20260707-status-filter"></script>
   </body>
 </html>
