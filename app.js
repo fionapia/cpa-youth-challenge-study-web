@@ -291,15 +291,20 @@ function questionMatchesCategory(question, categoryId) {
   return question.category === categoryId || (question.tags || []).includes(categoryId);
 }
 
-function getFilteredQuestions() {
+function getBaseFilteredQuestions() {
   const category = byId("category-select").value;
   const type = byId("type-select").value;
-  const status = byId("status-select").value;
   return questions.filter((question) => {
     const categoryMatch = category === "all" || questionMatchesCategory(question, category);
     const typeMatch = type === "all" || question.type === type;
-    const statusMatch = status === "all" || getQuestionStatus(question).key === status;
-    return categoryMatch && typeMatch && statusMatch;
+    return categoryMatch && typeMatch;
+  });
+}
+
+function getFilteredQuestions() {
+  const status = byId("status-select").value;
+  return getBaseFilteredQuestions().filter((question) => {
+    return status === "all" || getQuestionStatus(question).key === status;
   });
 }
 
@@ -407,8 +412,9 @@ function renderSelectors() {
 }
 
 function updatePoolCount() {
-  const progress = getProgressSummary(getFilteredQuestions());
-  byId("pool-count").textContent = `共 ${progress.total} 题 · 已刷 ${progress.answered} 题 · 未刷 ${progress.unanswered} 题`;
+  const baseProgress = getProgressSummary(getBaseFilteredQuestions());
+  const poolCount = getFilteredQuestions().length;
+  byId("pool-count").textContent = `当前可练 ${poolCount} 题 · 原范围共 ${baseProgress.total} 题 · 已刷 ${baseProgress.answered} 题 · 未刷 ${baseProgress.unanswered} 题`;
 }
 
 function startPractice(shuffle) {
