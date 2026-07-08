@@ -54,6 +54,7 @@ function getEmptyState() {
     statsByClient: {},
     mistakes: {},
     records: [],
+    questionProgress: {},
     notes: {},
     meta: {
       updatedAt: null,
@@ -75,6 +76,7 @@ function normalizeState(nextState) {
   const records = Array.isArray(nextState.records)
     ? nextState.records.map((record) => normalizeRecord(record, clientId)).filter(Boolean)
     : empty.records;
+  const questionProgress = normalizeQuestionProgress(nextState.questionProgress, records);
 
   const normalized = {
     total: Number.isFinite(Number(nextState.total)) ? Number(nextState.total) : empty.total,
@@ -84,6 +86,7 @@ function normalizeState(nextState) {
     statsByClient,
     mistakes: isPlainObject(nextState.mistakes) ? nextState.mistakes : empty.mistakes,
     records,
+    questionProgress,
     notes: isPlainObject(nextState.notes) ? nextState.notes : empty.notes,
     meta,
   };
@@ -185,6 +188,12 @@ function inferStateUpdatedAt(sourceState) {
       if (time) times.push(time);
     });
   }
+  if (isPlainObject(sourceState.questionProgress)) {
+    Object.values(sourceState.questionProgress).forEach((progress) => {
+      const time = normalizeIso(progress?.time);
+      if (time) times.push(time);
+    });
+  }
   if (isPlainObject(sourceState.mistakes)) {
     Object.values(sourceState.mistakes).forEach((mistake) => {
       const time = normalizeIso(mistake?.time);
@@ -215,6 +224,39 @@ function normalizeRecord(record, clientId) {
     correct: Boolean(record.correct),
     time,
   };
+}
+
+function normalizeQuestionProgress(questionProgress, records) {
+  const progressByQuestion = {};
+  if (isPlainObject(questionProgress)) {
+    Object.entries(questionProgress).forEach(([questionId, progress]) => {
+      if (!isPlainObject(progress)) return;
+      const time = normalizeIso(progress.time);
+      if (!time) return;
+      progressByQuestion[questionId] = {
+        questionId,
+        selected: progress.selected || "",
+        answer: progress.answer || "",
+        correct: Boolean(progress.correct),
+        time,
+      };
+    });
+  }
+
+  records.forEach((record) => {
+    const current = progressByQuestion[record.questionId];
+    if (!current || isAfter(record.time, current.time)) {
+      progressByQuestion[record.questionId] = {
+        questionId: record.questionId,
+        selected: record.selected,
+        answer: record.answer,
+        correct: record.correct,
+        time: record.time,
+      };
+    }
+  });
+
+  return progressByQuestion;
 }
 
 function normalizeMistakeTimes(nextState) {
@@ -309,9 +351,7 @@ function getFilteredQuestions() {
 }
 
 function getLatestRecordByQuestionId(questionId) {
-  return state.records
-    .filter((record) => record.questionId === questionId)
-    .sort((a, b) => b.time.localeCompare(a.time))[0] || null;
+  return state.questionProgress[questionId] || null;
 }
 
 function getQuestionStatus(question) {
@@ -590,6 +630,13 @@ function recordAnswer(question, selected, isCorrect) {
     time: now,
   });
   state.records = state.records.slice(0, 300);
+  state.questionProgress[question.id] = {
+    questionId: question.id,
+    selected,
+    answer: question.answer,
+    correct: isCorrect,
+    time: now,
+  };
 
   saveState();
   updateStats();
@@ -1074,6 +1121,7 @@ function mergeStates(localState, cloudState) {
     meta: mergedMeta,
     statsByClient: mergeStatsByClient(local.statsByClient, cloud.statsByClient, latestResetAt),
     records: mergeRecords(local.records, cloud.records, latestResetAt),
+    questionProgress: mergeQuestionProgress(local.questionProgress, cloud.questionProgress, latestResetAt),
     mistakes: mergeMistakes(local.mistakes, cloud.mistakes, mergedMeta, latestResetAt),
     notes: mergeNotes(local.notes, cloud.notes, mergedMeta, latestResetAt),
   };
@@ -1122,6 +1170,18 @@ function mergeRecords(localRecords, cloudRecords, latestResetAt) {
     if (!current || isAfter(record.time, current.time)) byId.set(record.id, record);
   });
   return [...byId.values()].sort((a, b) => b.time.localeCompare(a.time)).slice(0, 300);
+}
+
+function mergeQuestionProgress(localProgress, cloudProgress, latestResetAt) {
+  const merged = {};
+  [localProgress, cloudProgress].forEach((source) => {
+    Object.entries(source || {}).forEach(([questionId, progress]) => {
+      if (latestResetAt && !isAfter(progress.time, latestResetAt)) return;
+      const current = merged[questionId];
+      if (!current || isAfter(progress.time, current.time)) merged[questionId] = { ...progress };
+    });
+  });
+  return merged;
 }
 
 function mergeMistakes(localMistakes, cloudMistakes, mergedMeta, latestResetAt) {
