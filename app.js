@@ -1,6 +1,7 @@
 const STORAGE_KEY = "daqh_quiz_progress_v1";
 const CLIENT_ID_KEY = "daqh_quiz_client_id_v1";
 const SYNC_TABLE = "quiz_sync_states";
+const APP_VERSION = "20260711-progress-cache-v2";
 
 const CATEGORIES = [
   { id: "all", title: "全部试题", className: "card-all" },
@@ -1251,12 +1252,30 @@ function bindEvents() {
   });
 }
 
+async function checkForAppUpdate() {
+  try {
+    const response = await fetch(`./version.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return;
+    const latest = await response.json();
+    if (!latest.version || latest.version === APP_VERSION) return;
+
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("app_version") === latest.version) return;
+    url.searchParams.set("app_version", latest.version);
+    window.location.replace(url.toString());
+  } catch {
+    // Version checks must never interrupt offline practice.
+  }
+}
+
 function init() {
+  document.documentElement.dataset.appVersion = APP_VERSION;
   renderCategories();
   renderSelectors();
   updateStats();
   bindEvents();
   initSync();
+  checkForAppUpdate();
 }
 
 init();
