@@ -20542,18 +20542,5632 @@ window.QUESTION_BANK = [
     "options": [],
     "answer": "错误",
     "explanation": "考点：机考题型"
+  },
+  {
+    "id": "q0706",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "甲公司销售设备并承诺提供两年期常规质保，另单独销售延长一年质保服务。下列说法正确的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "两项质保均不构成单项履约义务"
+      },
+      {
+        "key": "B",
+        "text": "两项质保均构成单项履约义务"
+      },
+      {
+        "key": "C",
+        "text": "常规质保通常按或有事项处理，延长质保通常构成单项履约义务"
+      },
+      {
+        "key": "D",
+        "text": "全部价款应在设备交付时确认收入"
+      }
+    ],
+    "answer": "C",
+    "explanation": "常规质量保证通常适用或有事项准则，额外服务型质保适用收入准则。"
+  },
+  {
+    "id": "q0707",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "合同开始日企业预计客户取得商品控制权与支付价款间隔不超过一年，关于重大融资成分的处理正确的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "必须调整"
+      },
+      {
+        "key": "B",
+        "text": "可以不考虑"
+      },
+      {
+        "key": "C",
+        "text": "只有客户预付时才调整"
+      },
+      {
+        "key": "D",
+        "text": "只有企业赊销时才调整"
+      }
+    ],
+    "answer": "B",
+    "explanation": "收入准则提供不超过一年的实务简化处理。"
+  },
+  {
+    "id": "q0708",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "承租人在租赁期开始日确认使用权资产时，通常不计入其初始成本的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "租赁负债初始计量金额"
+      },
+      {
+        "key": "B",
+        "text": "租赁期开始日前支付的租赁付款额"
+      },
+      {
+        "key": "C",
+        "text": "可抵扣的增值税进项税额"
+      },
+      {
+        "key": "D",
+        "text": "预计拆除复原成本的现值"
+      }
+    ],
+    "answer": "C",
+    "explanation": "可抵扣进项税额不构成资产成本。"
+  },
+  {
+    "id": "q0709",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "企业管理金融资产的业务模式是以收取合同现金流量为目标，且现金流量仅为本金及利息，该资产通常分类为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "以摊余成本计量"
+      },
+      {
+        "key": "B",
+        "text": "以公允价值计量且变动计入其他综合收益"
+      },
+      {
+        "key": "C",
+        "text": "以公允价值计量且变动计入当期损益"
+      },
+      {
+        "key": "D",
+        "text": "长期股权投资"
+      }
+    ],
+    "answer": "A",
+    "explanation": "同时满足业务模式和SPPI条件时按摊余成本计量。"
+  },
+  {
+    "id": "q0710",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "对于购买或源生时未发生信用减值的金融资产，信用风险自初始确认后显著增加但尚未发生信用减值，应确认：",
+    "options": [
+      {
+        "key": "A",
+        "text": "未来12个月预期信用损失"
+      },
+      {
+        "key": "B",
+        "text": "整个存续期预期信用损失"
+      },
+      {
+        "key": "C",
+        "text": "已发生损失"
+      },
+      {
+        "key": "D",
+        "text": "不确认损失"
+      }
+    ],
+    "answer": "B",
+    "explanation": "信用风险显著增加后进入第二阶段，计量整个存续期预期信用损失。"
+  },
+  {
+    "id": "q0711",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "资产组账面价值中包含商誉时，减值损失的抵减顺序首先是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "存货"
+      },
+      {
+        "key": "B",
+        "text": "商誉"
+      },
+      {
+        "key": "C",
+        "text": "固定资产"
+      },
+      {
+        "key": "D",
+        "text": "无形资产"
+      }
+    ],
+    "answer": "B",
+    "explanation": "资产组减值损失先抵减分摊至资产组的商誉账面价值。"
+  },
+  {
+    "id": "q0712",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "同一控制下企业合并形成的长期股权投资，其初始投资成本一般为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "支付对价的公允价值"
+      },
+      {
+        "key": "B",
+        "text": "被合并方可辨认净资产公允价值份额"
+      },
+      {
+        "key": "C",
+        "text": "被合并方在最终控制方合并财务报表中净资产账面价值份额"
+      },
+      {
+        "key": "D",
+        "text": "被合并方单体报表净资产公允价值"
+      }
+    ],
+    "answer": "C",
+    "explanation": "同一控制合并延续最终控制方合并层面的账面价值。"
+  },
+  {
+    "id": "q0713",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "非同一控制下企业合并中，购买方发生的审计、法律服务等直接相关费用应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "计入合并成本"
+      },
+      {
+        "key": "B",
+        "text": "计入当期损益"
+      },
+      {
+        "key": "C",
+        "text": "冲减资本公积"
+      },
+      {
+        "key": "D",
+        "text": "计入长期待摊费用"
+      }
+    ],
+    "answer": "B",
+    "explanation": "非同一控制合并的中介费用通常在发生时计入当期损益。"
+  },
+  {
+    "id": "q0714",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "资产负债表日递延所得税资产的确认以很可能取得用来抵扣可抵扣暂时性差异的何种金额为限：",
+    "options": [
+      {
+        "key": "A",
+        "text": "会计利润"
+      },
+      {
+        "key": "B",
+        "text": "应纳税所得额"
+      },
+      {
+        "key": "C",
+        "text": "营业收入"
+      },
+      {
+        "key": "D",
+        "text": "现金流量净额"
+      }
+    ],
+    "answer": "B",
+    "explanation": "递延所得税资产依赖未来期间可利用的应纳税所得额。"
+  },
+  {
+    "id": "q0715",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "修改其他条款导致债务终止确认并确认新债务的债务重组，债务人新债务与原债务账面价值的差额通常计入：",
+    "options": [
+      {
+        "key": "A",
+        "text": "资本公积"
+      },
+      {
+        "key": "B",
+        "text": "其他综合收益"
+      },
+      {
+        "key": "C",
+        "text": "投资收益"
+      },
+      {
+        "key": "D",
+        "text": "营业外支出"
+      }
+    ],
+    "answer": "C",
+    "explanation": "债务人对相关利得或损失通常计入投资收益。"
+  },
+  {
+    "id": "q0716",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "企业以存货换入设备且交换具有商业实质，换入资产公允价值能够可靠计量，换入设备成本原则上以何者为基础确定：",
+    "options": [
+      {
+        "key": "A",
+        "text": "换出存货账面价值"
+      },
+      {
+        "key": "B",
+        "text": "换入资产公允价值"
+      },
+      {
+        "key": "C",
+        "text": "换出存货历史成本"
+      },
+      {
+        "key": "D",
+        "text": "双方约定的任意金额"
+      }
+    ],
+    "answer": "B",
+    "explanation": "符合公允价值计量条件时，以公允价值和相关税费为基础确定成本。"
+  },
+  {
+    "id": "q0717",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "权益结算股份支付在等待期内每个资产负债表日确认的成本费用，所依据权益工具公允价值的计量日通常是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "授予日"
+      },
+      {
+        "key": "B",
+        "text": "可行权日"
+      },
+      {
+        "key": "C",
+        "text": "行权日"
+      },
+      {
+        "key": "D",
+        "text": "结算日"
+      }
+    ],
+    "answer": "A",
+    "explanation": "权益结算股份支付按授予日权益工具公允价值计量，后续不因公允价值变动调整。"
+  },
+  {
+    "id": "q0718",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "与收益相关的政府补助用于补偿企业以后期间相关成本费用的，应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "收到时全部计入当期损益"
+      },
+      {
+        "key": "B",
+        "text": "确认为递延收益并在确认相关成本费用期间计入损益"
+      },
+      {
+        "key": "C",
+        "text": "永久计入资本公积"
+      },
+      {
+        "key": "D",
+        "text": "冲减实收资本"
+      }
+    ],
+    "answer": "B",
+    "explanation": "补助应与其补偿的成本费用期间相匹配。"
+  },
+  {
+    "id": "q0719",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "企业因未决诉讼承担现时义务，经济利益很可能流出且金额能够可靠计量，应确认：",
+    "options": [
+      {
+        "key": "A",
+        "text": "预计负债"
+      },
+      {
+        "key": "B",
+        "text": "或有负债"
+      },
+      {
+        "key": "C",
+        "text": "递延收益"
+      },
+      {
+        "key": "D",
+        "text": "其他综合收益"
+      }
+    ],
+    "answer": "A",
+    "explanation": "同时满足现时义务、很可能流出和可靠计量时确认预计负债。"
+  },
+  {
+    "id": "q0720",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "企业因取得新的技术资料而调低固定资产预计净残值，该事项属于：",
+    "options": [
+      {
+        "key": "A",
+        "text": "会计政策变更"
+      },
+      {
+        "key": "B",
+        "text": "会计估计变更"
+      },
+      {
+        "key": "C",
+        "text": "前期差错更正"
+      },
+      {
+        "key": "D",
+        "text": "资产负债表日后调整事项"
+      }
+    ],
+    "answer": "B",
+    "explanation": "基于新信息调整预计净残值属于会计估计变更，采用未来适用法。"
+  },
+  {
+    "id": "q0721",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "投资性房地产采用公允价值模式计量后，资产负债表日公允价值变动通常计入：",
+    "options": [
+      {
+        "key": "A",
+        "text": "其他综合收益"
+      },
+      {
+        "key": "B",
+        "text": "公允价值变动损益"
+      },
+      {
+        "key": "C",
+        "text": "资本公积"
+      },
+      {
+        "key": "D",
+        "text": "留存收益"
+      }
+    ],
+    "answer": "B",
+    "explanation": "公允价值模式下不计提折旧或摊销，变动计入当期损益。"
+  },
+  {
+    "id": "q0722",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "企业内部研究开发项目研究阶段发生的支出应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "全部资本化"
+      },
+      {
+        "key": "B",
+        "text": "满足条件时资本化"
+      },
+      {
+        "key": "C",
+        "text": "发生时计入当期损益"
+      },
+      {
+        "key": "D",
+        "text": "计入商誉"
+      }
+    ],
+    "answer": "C",
+    "explanation": "研究阶段无法证明未来经济利益，支出应费用化。"
+  },
+  {
+    "id": "q0723",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "专门借款闲置资金取得的利息收入，在资本化期间通常应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "计入营业外收入"
+      },
+      {
+        "key": "B",
+        "text": "冲减符合资本化条件资产的成本"
+      },
+      {
+        "key": "C",
+        "text": "计入资本公积"
+      },
+      {
+        "key": "D",
+        "text": "不作处理"
+      }
+    ],
+    "answer": "B",
+    "explanation": "专门借款资本化金额扣除闲置资金收益。"
+  },
+  {
+    "id": "q0724",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "现金流量表中，企业购建固定资产支付的现金通常列为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "经营活动"
+      },
+      {
+        "key": "B",
+        "text": "投资活动"
+      },
+      {
+        "key": "C",
+        "text": "筹资活动"
+      },
+      {
+        "key": "D",
+        "text": "汇率变动"
+      }
+    ],
+    "answer": "B",
+    "explanation": "购建长期资产属于投资活动现金流出。"
+  },
+  {
+    "id": "q0725",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS易错单选题（20题）",
+    "type": "single",
+    "stem": "公允价值计量中，企业应当采用的主要市场是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "交易价格最高的市场"
+      },
+      {
+        "key": "B",
+        "text": "企业通常交易且交易量和活跃程度最大的市场"
+      },
+      {
+        "key": "C",
+        "text": "距离最近的市场"
+      },
+      {
+        "key": "D",
+        "text": "管理层指定的任意市场"
+      }
+    ],
+    "answer": "B",
+    "explanation": "主要市场按该资产或负债交易量和活跃程度判断。"
+  },
+  {
+    "id": "q0726",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "判断企业是主要责任人还是代理人时，控制商品或服务的迹象包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "承担主要履约责任"
+      },
+      {
+        "key": "B",
+        "text": "承担存货风险"
+      },
+      {
+        "key": "C",
+        "text": "有权自主决定价格"
+      },
+      {
+        "key": "D",
+        "text": "仅按固定比例收取佣金"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "佣金形式本身不是控制的积极迹象，应结合控制原则判断。"
+  },
+  {
+    "id": "q0727",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "下列项目通常属于租赁付款额组成部分的有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "固定付款额"
+      },
+      {
+        "key": "B",
+        "text": "实质固定付款额"
+      },
+      {
+        "key": "C",
+        "text": "取决于指数或比率的可变租赁付款额"
+      },
+      {
+        "key": "D",
+        "text": "与指数无关且取决于销售额的可变付款额"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "与指数无关的销售额提成通常发生时计入损益。"
+  },
+  {
+    "id": "q0728",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "金融资产合同现金流量特征测试中的利息通常可包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "货币时间价值"
+      },
+      {
+        "key": "B",
+        "text": "与特定期间未偿本金有关的信用风险"
+      },
+      {
+        "key": "C",
+        "text": "其他基本借贷风险和成本"
+      },
+      {
+        "key": "D",
+        "text": "与股票价格挂钩的收益"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "股票价格挂钩引入与基本借贷安排无关的风险。"
+  },
+  {
+    "id": "q0729",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "预计资产未来现金流量现值时，通常应考虑的因素有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "资产持续使用产生的现金流入"
+      },
+      {
+        "key": "B",
+        "text": "为实现现金流入所必需的现金流出"
+      },
+      {
+        "key": "C",
+        "text": "使用寿命结束处置资产收到或支付的净现金流量"
+      },
+      {
+        "key": "D",
+        "text": "尚未承诺的未来重组节约"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "未承诺重组的未来现金流不纳入现值估计。"
+  },
+  {
+    "id": "q0730",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "非同一控制下企业合并的合并成本可能包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "支付现金的公允价值"
+      },
+      {
+        "key": "B",
+        "text": "发行权益证券的公允价值"
+      },
+      {
+        "key": "C",
+        "text": "承担负债的公允价值"
+      },
+      {
+        "key": "D",
+        "text": "为合并发生的中介费用"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "中介费用通常计入当期损益，不计入合并成本。"
+  },
+  {
+    "id": "q0731",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "下列暂时性差异中，通常可能形成递延所得税资产的有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "资产账面价值小于计税基础"
+      },
+      {
+        "key": "B",
+        "text": "负债账面价值大于计税基础"
+      },
+      {
+        "key": "C",
+        "text": "可抵扣亏损符合确认条件"
+      },
+      {
+        "key": "D",
+        "text": "资产账面价值大于计税基础"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "D通常形成应纳税暂时性差异和递延所得税负债。"
+  },
+  {
+    "id": "q0732",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "下列关于股份支付的说法正确的有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "现金结算股份支付形成负债"
+      },
+      {
+        "key": "B",
+        "text": "现金结算股份支付在结算前需重新计量"
+      },
+      {
+        "key": "C",
+        "text": "权益结算股份支付等待期内通常不重新计量授予日公允价值"
+      },
+      {
+        "key": "D",
+        "text": "可行权条件均影响权益工具授予日公允价值"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "服务和非市场业绩条件通常通过数量调整反映，不都进入授予日公允价值。"
+  },
+  {
+    "id": "q0733",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "预计负债最佳估计数的确定可能采用：",
+    "options": [
+      {
+        "key": "A",
+        "text": "连续范围内各种结果可能性相同时取中间值"
+      },
+      {
+        "key": "B",
+        "text": "涉及多个项目时按各种结果及概率计算"
+      },
+      {
+        "key": "C",
+        "text": "单个项目通常按最可能发生金额"
+      },
+      {
+        "key": "D",
+        "text": "一律按最大可能损失"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "最佳估计并非一律采用最大金额。"
+  },
+  {
+    "id": "q0734",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "下列属于会计政策的有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "存货发出计价方法"
+      },
+      {
+        "key": "B",
+        "text": "投资性房地产后续计量模式"
+      },
+      {
+        "key": "C",
+        "text": "固定资产预计使用年限"
+      },
+      {
+        "key": "D",
+        "text": "收入确认原则"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "固定资产使用年限属于会计估计。"
+  },
+  {
+    "id": "q0735",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS易错多选题（10题）",
+    "type": "multiple",
+    "stem": "关联方披露中，企业应当披露的关联方交易要素通常包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "交易金额"
+      },
+      {
+        "key": "B",
+        "text": "未结算项目金额和条款"
+      },
+      {
+        "key": "C",
+        "text": "坏账准备有关信息"
+      },
+      {
+        "key": "D",
+        "text": "对所有关联方交易一律声明公平交易"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "只有能够提供充分证据时才能声明关联方交易采用公平交易条款。"
+  },
+  {
+    "id": "q0736",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "客户支付非现金对价时，企业原则上应按非现金对价在合同开始日的公允价值确定交易价格。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "非现金对价通常按合同开始日公允价值计量。"
+  },
+  {
+    "id": "q0737",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "短期租赁是指租赁期不超过12个月且包含购买选择权的租赁。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "短期租赁不能包含购买选择权。"
+  },
+  {
+    "id": "q0738",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "企业可以在初始确认后将非交易性权益工具投资指定为以公允价值计量且变动计入其他综合收益。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "该指定只能在初始确认时作出且不可撤销。"
+  },
+  {
+    "id": "q0739",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "商誉应当单独进行减值测试，无需分摊至相关资产组或资产组组合。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "商誉必须分摊至受益的资产组或资产组组合后测试。"
+  },
+  {
+    "id": "q0740",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "同一控制下企业合并产生的新增长期股权投资与支付对价账面价值的差额，通常调整资本公积，资本公积不足时调整留存收益。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "同一控制合并不确认交易损益。"
+  },
+  {
+    "id": "q0741",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "资产负债表日无论未来是否可能取得应纳税所得额，企业均应全额确认可抵扣亏损形成的递延所得税资产。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "仅以很可能取得的应纳税所得额为限确认。"
+  },
+  {
+    "id": "q0742",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "政府补助只有在企业实际收到款项时才能确认。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "满足补助所附条件且能够收到时即可确认。"
+  },
+  {
+    "id": "q0743",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "前期差错不重要时，企业可以采用未来适用法更正。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "不重要前期差错可以直接调整发现当期相关项目。"
+  },
+  {
+    "id": "q0744",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "成本模式计量的投资性房地产转为公允价值模式属于会计估计变更。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "符合条件的计量模式变更属于会计政策变更。"
+  },
+  {
+    "id": "q0745",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS易错判断题（10题）",
+    "type": "judge",
+    "stem": "企业自身信用风险导致指定为公允价值计量且变动计入损益的金融负债公允价值变动，原则上计入其他综合收益。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "除非该处理会造成或扩大损益中的会计错配。"
+  },
+  {
+    "id": "q0746",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "注册会计师保持职业怀疑的核心要求是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "假定管理层不诚信"
+      },
+      {
+        "key": "B",
+        "text": "对可能表明错报的迹象保持警觉并审慎评价证据"
+      },
+      {
+        "key": "C",
+        "text": "拒绝使用管理层提供的信息"
+      },
+      {
+        "key": "D",
+        "text": "对所有事项实施函证"
+      }
+    ],
+    "answer": "B",
+    "explanation": "职业怀疑既不预设不诚实，也不能无条件相信管理层。"
+  },
+  {
+    "id": "q0747",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "财务报表整体的重要性通常由谁在计划审计工作时确定：",
+    "options": [
+      {
+        "key": "A",
+        "text": "被审计单位管理层"
+      },
+      {
+        "key": "B",
+        "text": "注册会计师"
+      },
+      {
+        "key": "C",
+        "text": "监管机构逐项指定"
+      },
+      {
+        "key": "D",
+        "text": "内部审计人员"
+      }
+    ],
+    "answer": "B",
+    "explanation": "重要性属于注册会计师的职业判断。"
+  },
+  {
+    "id": "q0748",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "实际执行的重要性通常低于财务报表整体重要性，主要目的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "降低未更正和未发现错报汇总超过整体重要性的可能性"
+      },
+      {
+        "key": "B",
+        "text": "减少审计程序"
+      },
+      {
+        "key": "C",
+        "text": "保证发现全部错报"
+      },
+      {
+        "key": "D",
+        "text": "替代明显微小错报临界值"
+      }
+    ],
+    "answer": "A",
+    "explanation": "实际执行的重要性为错报汇总风险留出缓冲。"
+  },
+  {
+    "id": "q0749",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "在识别和评估重大错报风险时，注册会计师应当在何种层次进行评估：",
+    "options": [
+      {
+        "key": "A",
+        "text": "仅财务报表层次"
+      },
+      {
+        "key": "B",
+        "text": "仅认定层次"
+      },
+      {
+        "key": "C",
+        "text": "财务报表层次和认定层次"
+      },
+      {
+        "key": "D",
+        "text": "仅账户余额层次"
+      }
+    ],
+    "answer": "C",
+    "explanation": "两个层次的风险对应总体应对和进一步审计程序。"
+  },
+  {
+    "id": "q0750",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "对特别风险，注册会计师应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "仅实施分析程序"
+      },
+      {
+        "key": "B",
+        "text": "了解与该风险相关的控制"
+      },
+      {
+        "key": "C",
+        "text": "必须完全依赖控制测试"
+      },
+      {
+        "key": "D",
+        "text": "不实施实质性程序"
+      }
+    ],
+    "answer": "B",
+    "explanation": "对特别风险应了解相关控制，是否测试取决于拟采取的审计方案。"
+  },
+  {
+    "id": "q0751",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "实质性程序应当针对：",
+    "options": [
+      {
+        "key": "A",
+        "text": "所有重大类别的交易、账户余额和披露"
+      },
+      {
+        "key": "B",
+        "text": "只有控制无效的项目"
+      },
+      {
+        "key": "C",
+        "text": "只有舞弊风险"
+      },
+      {
+        "key": "D",
+        "text": "只有期末余额"
+      }
+    ],
+    "answer": "A",
+    "explanation": "无论评估的重大错报风险如何，重大项目均需实施实质性程序。"
+  },
+  {
+    "id": "q0752",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "函证回函由被审计单位转交注册会计师时，首先需要考虑的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "是否增加样本量"
+      },
+      {
+        "key": "B",
+        "text": "回函可靠性"
+      },
+      {
+        "key": "C",
+        "text": "是否立即出具保留意见"
+      },
+      {
+        "key": "D",
+        "text": "是否删除函证程序"
+      }
+    ],
+    "answer": "B",
+    "explanation": "回函未直接送达可能影响对来源和完整性的信赖。"
+  },
+  {
+    "id": "q0753",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "对存货盘点实施监盘主要获取有关存货存在和何种认定的证据：",
+    "options": [
+      {
+        "key": "A",
+        "text": "权利和义务"
+      },
+      {
+        "key": "B",
+        "text": "状况"
+      },
+      {
+        "key": "C",
+        "text": "计价准确性"
+      },
+      {
+        "key": "D",
+        "text": "截止"
+      }
+    ],
+    "answer": "B",
+    "explanation": "监盘直接关注存货存在及其状况，其他认定还需追加程序。"
+  },
+  {
+    "id": "q0754",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "注册会计师发现管理层以前未识别的关联方关系，首先应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "立即解除业务约定"
+      },
+      {
+        "key": "B",
+        "text": "将相关信息告知项目组其他成员"
+      },
+      {
+        "key": "C",
+        "text": "直接出具否定意见"
+      },
+      {
+        "key": "D",
+        "text": "删除已执行程序"
+      }
+    ],
+    "answer": "B",
+    "explanation": "项目组需要共享信息并重新评价风险、询问管理层及实施程序。"
+  },
+  {
+    "id": "q0755",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "对会计估计实施审计时，注册会计师评价管理层判断是否存在偏向，偏向迹象本身：",
+    "options": [
+      {
+        "key": "A",
+        "text": "必然构成错报"
+      },
+      {
+        "key": "B",
+        "text": "不一定构成错报，但影响风险评价"
+      },
+      {
+        "key": "C",
+        "text": "与审计无关"
+      },
+      {
+        "key": "D",
+        "text": "必然构成舞弊"
+      }
+    ],
+    "answer": "B",
+    "explanation": "管理层偏向迹象需要综合评价，不当然等同于错报或舞弊。"
+  },
+  {
+    "id": "q0756",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "集团项目组对集团审计意见承担的责任是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "与组成部分注册会计师共同承担"
+      },
+      {
+        "key": "B",
+        "text": "单独承担"
+      },
+      {
+        "key": "C",
+        "text": "由集团管理层承担"
+      },
+      {
+        "key": "D",
+        "text": "由组成部分管理层承担"
+      }
+    ],
+    "answer": "B",
+    "explanation": "集团项目合伙人及集团项目组对集团审计意见负责。"
+  },
+  {
+    "id": "q0757",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "期后事项中，注册会计师在审计报告日后、财务报表报出日前知悉可能导致修改报表的事实，应首先：",
+    "options": [
+      {
+        "key": "A",
+        "text": "不予理会"
+      },
+      {
+        "key": "B",
+        "text": "与管理层和治理层讨论并确定报表是否需要修改"
+      },
+      {
+        "key": "C",
+        "text": "立即向媒体公告"
+      },
+      {
+        "key": "D",
+        "text": "撤销全部底稿"
+      }
+    ],
+    "answer": "B",
+    "explanation": "应了解情况、讨论并评价管理层拟如何处理。"
+  },
+  {
+    "id": "q0758",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "审计报告中的关键审计事项应从何处选取：",
+    "options": [
+      {
+        "key": "A",
+        "text": "所有审计差异"
+      },
+      {
+        "key": "B",
+        "text": "与治理层沟通过的事项"
+      },
+      {
+        "key": "C",
+        "text": "管理层声明书"
+      },
+      {
+        "key": "D",
+        "text": "内部审计报告全部事项"
+      }
+    ],
+    "answer": "B",
+    "explanation": "关键审计事项从与治理层沟通过的事项中进一步选取。"
+  },
+  {
+    "id": "q0759",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "无法获取充分、适当的审计证据且可能影响重大但不广泛，注册会计师应发表：",
+    "options": [
+      {
+        "key": "A",
+        "text": "无保留意见"
+      },
+      {
+        "key": "B",
+        "text": "保留意见"
+      },
+      {
+        "key": "C",
+        "text": "否定意见"
+      },
+      {
+        "key": "D",
+        "text": "无法表示意见"
+      }
+    ],
+    "answer": "B",
+    "explanation": "审计范围受限且影响重大但不广泛时发表保留意见。"
+  },
+  {
+    "id": "q0760",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "四、审计准则易错单选题（15题）",
+    "type": "single",
+    "stem": "项目质量复核应当在何时完成：",
+    "options": [
+      {
+        "key": "A",
+        "text": "审计报告日后"
+      },
+      {
+        "key": "B",
+        "text": "审计报告日或之前"
+      },
+      {
+        "key": "C",
+        "text": "财务报表报出后"
+      },
+      {
+        "key": "D",
+        "text": "底稿归档后"
+      }
+    ],
+    "answer": "B",
+    "explanation": "项目合伙人不得在项目质量复核完成前签署报告。"
+  },
+  {
+    "id": "q0761",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "总体审计策略通常应当包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "确定审计范围"
+      },
+      {
+        "key": "B",
+        "text": "确定报告目标、时间安排和沟通性质"
+      },
+      {
+        "key": "C",
+        "text": "确定审计方向"
+      },
+      {
+        "key": "D",
+        "text": "逐项记录每个审计程序的结果"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "具体程序及其结果属于具体审计计划和审计工作底稿内容。"
+  },
+  {
+    "id": "q0762",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "风险评估程序通常包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "询问管理层和适当人员"
+      },
+      {
+        "key": "B",
+        "text": "分析程序"
+      },
+      {
+        "key": "C",
+        "text": "观察和检查"
+      },
+      {
+        "key": "D",
+        "text": "对所有账户实施细节测试"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "细节测试属于进一步审计程序而非风险评估程序的必备组成。"
+  },
+  {
+    "id": "q0763",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "注册会计师设计控制测试时可以采用的程序有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "询问"
+      },
+      {
+        "key": "B",
+        "text": "观察"
+      },
+      {
+        "key": "C",
+        "text": "检查"
+      },
+      {
+        "key": "D",
+        "text": "重新执行"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "控制测试通常需要询问与其他程序结合。"
+  },
+  {
+    "id": "q0764",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "审计证据的充分性和适当性分别主要涉及：",
+    "options": [
+      {
+        "key": "A",
+        "text": "数量"
+      },
+      {
+        "key": "B",
+        "text": "相关性"
+      },
+      {
+        "key": "C",
+        "text": "可靠性"
+      },
+      {
+        "key": "D",
+        "text": "审计收费"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "充分性是数量，适当性是相关性和可靠性。"
+  },
+  {
+    "id": "q0765",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "对未回函的积极式询证函，注册会计师可能实施的替代程序包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "检查期后收款"
+      },
+      {
+        "key": "B",
+        "text": "检查销售合同和发运凭证"
+      },
+      {
+        "key": "C",
+        "text": "检查相关会计记录"
+      },
+      {
+        "key": "D",
+        "text": "将未回函直接视为错报"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "未回函不当然等于错报，应实施替代程序。"
+  },
+  {
+    "id": "q0766",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "识别出的超出正常经营过程的重大关联方交易，注册会计师应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "检查相关合同或协议"
+      },
+      {
+        "key": "B",
+        "text": "评价商业理由"
+      },
+      {
+        "key": "C",
+        "text": "评价是否恰当授权和批准"
+      },
+      {
+        "key": "D",
+        "text": "仅取得管理层口头解释即可"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "口头解释本身通常不足以形成充分适当证据。"
+  },
+  {
+    "id": "q0767",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "评价错报时，注册会计师应当考虑：",
+    "options": [
+      {
+        "key": "A",
+        "text": "错报金额"
+      },
+      {
+        "key": "B",
+        "text": "错报性质"
+      },
+      {
+        "key": "C",
+        "text": "错报发生的特定环境"
+      },
+      {
+        "key": "D",
+        "text": "只考虑税后金额"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "重要性既有数量因素也有性质和环境因素。"
+  },
+  {
+    "id": "q0768",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "五、审计准则易错多选题（8题）",
+    "type": "multiple",
+    "stem": "下列情形可能导致在审计报告中增加强调事项段的有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "异常诉讼或监管行动的未来结果存在不确定性且已恰当披露"
+      },
+      {
+        "key": "B",
+        "text": "提前应用对报表有广泛影响的新准则且已恰当披露"
+      },
+      {
+        "key": "C",
+        "text": "重大错报未更正"
+      },
+      {
+        "key": "D",
+        "text": "审计范围受限"
+      }
+    ],
+    "answer": "AB",
+    "explanation": "C和D通常需要考虑非无保留意见，而非用强调事项段替代。"
+  },
+  {
+    "id": "q0769",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "六、审计准则易错判断题（7题）",
+    "type": "judge",
+    "stem": "注册会计师可以通过实施实质性程序将重大错报风险直接降低至可接受水平。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "重大错报风险是审计前存在的风险，程序降低的是检查风险。"
+  },
+  {
+    "id": "q0770",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "六、审计准则易错判断题（7题）",
+    "type": "judge",
+    "stem": "如果拟信赖控制在本期未发生变化，注册会计师可以无限期沿用以前年度控制测试证据。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "对拟信赖控制应按准则要求轮换测试，且每三年至少测试一次。"
+  },
+  {
+    "id": "q0771",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "六、审计准则易错判断题（7题）",
+    "type": "judge",
+    "stem": "分析程序既可用于风险评估，也可用作实质性程序，并应在审计结束阶段用于总体复核。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "分析程序在审计不同阶段具有不同目的。"
+  },
+  {
+    "id": "q0772",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "六、审计准则易错判断题（7题）",
+    "type": "judge",
+    "stem": "外部证据在任何情况下都必然比内部证据可靠。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "可靠性受来源、性质及获取环境影响，不能绝对化。"
+  },
+  {
+    "id": "q0773",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "六、审计准则易错判断题（7题）",
+    "type": "judge",
+    "stem": "管理层书面声明可以替代注册会计师本可合理预期获取的其他审计证据。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "书面声明是必要证据，但不能替代其他证据。"
+  },
+  {
+    "id": "q0774",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "六、审计准则易错判断题（7题）",
+    "type": "judge",
+    "stem": "在审计报告中沟通关键审计事项不等同于就该事项单独发表意见。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "关键审计事项说明审计应对，不形成单独意见。"
+  },
+  {
+    "id": "q0775",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "六、审计准则易错判断题（7题）",
+    "type": "judge",
+    "stem": "审计工作底稿归档后，任何情况下都不得增加或修改底稿。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "特殊情况下可以增加或修改，但必须记录理由、时间和复核人员等信息。"
+  },
+  {
+    "id": "q0776",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "新时代财会监督体系中承担主责监督的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "财政部门"
+      },
+      {
+        "key": "B",
+        "text": "行业协会"
+      },
+      {
+        "key": "C",
+        "text": "各单位内部审计"
+      },
+      {
+        "key": "D",
+        "text": "会计师事务所"
+      }
+    ],
+    "answer": "A",
+    "explanation": "财会监督体系以财政部门主责监督为首。"
+  },
+  {
+    "id": "q0777",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "国办发〔2021〕30号强调会计师事务所选聘中不得：",
+    "options": [
+      {
+        "key": "A",
+        "text": "综合评价质量和价格"
+      },
+      {
+        "key": "B",
+        "text": "将低价作为唯一中标标准"
+      },
+      {
+        "key": "C",
+        "text": "考虑专业胜任能力"
+      },
+      {
+        "key": "D",
+        "text": "考虑质量管理水平"
+      }
+    ],
+    "answer": "B",
+    "explanation": "文件着力治理低价恶性竞争和不当选聘机制。"
+  },
+  {
+    "id": "q0778",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "注册会计师行业诚信建设的基础性载体是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "诚信档案"
+      },
+      {
+        "key": "B",
+        "text": "广告排名"
+      },
+      {
+        "key": "C",
+        "text": "收费排行榜"
+      },
+      {
+        "key": "D",
+        "text": "客户数量"
+      }
+    ],
+    "answer": "A",
+    "explanation": "诚信档案用于记录事务所和注册会计师诚信信息。"
+  },
+  {
+    "id": "q0779",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "注册会计师专业阶段考试单科合格成绩有效期为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "三年"
+      },
+      {
+        "key": "B",
+        "text": "五年"
+      },
+      {
+        "key": "C",
+        "text": "八年"
+      },
+      {
+        "key": "D",
+        "text": "长期有效"
+      }
+    ],
+    "answer": "B",
+    "explanation": "专业阶段单科成绩五年内有效。"
+  },
+  {
+    "id": "q0780",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "会计师事务所分所在执业质量方面的最终责任由谁承担：",
+    "options": [
+      {
+        "key": "A",
+        "text": "分所负责人个人"
+      },
+      {
+        "key": "B",
+        "text": "总所"
+      },
+      {
+        "key": "C",
+        "text": "分所客户"
+      },
+      {
+        "key": "D",
+        "text": "行业协会"
+      }
+    ],
+    "answer": "B",
+    "explanation": "总所对分所执业质量承担最终责任并实施一体化管理。"
+  },
+  {
+    "id": "q0781",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "根据《注册会计师法》，会计师事务所依法承办业务的主体是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "注册会计师个人"
+      },
+      {
+        "key": "B",
+        "text": "会计师事务所"
+      },
+      {
+        "key": "C",
+        "text": "委托单位财务部门"
+      },
+      {
+        "key": "D",
+        "text": "财政部门"
+      }
+    ],
+    "answer": "B",
+    "explanation": "注册会计师承办业务由其所在会计师事务所统一受理并签订委托合同。"
+  },
+  {
+    "id": "q0782",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "注册会计师执行审计业务遇到委托人示意作不实或不当证明时，应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "按委托人要求处理"
+      },
+      {
+        "key": "B",
+        "text": "拒绝出具有关报告"
+      },
+      {
+        "key": "C",
+        "text": "先收费再决定"
+      },
+      {
+        "key": "D",
+        "text": "交由被审计单位决定"
+      }
+    ],
+    "answer": "B",
+    "explanation": "对不实或不当证明要求应拒绝出具报告。"
+  },
+  {
+    "id": "q0783",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "七、政策与法律易错单选题（8题）",
+    "type": "single",
+    "stem": "会计师事务所对本所注册会计师依照法律承办的业务承担：",
+    "options": [
+      {
+        "key": "A",
+        "text": "行政许可责任"
+      },
+      {
+        "key": "B",
+        "text": "民事责任"
+      },
+      {
+        "key": "C",
+        "text": "国家赔偿责任"
+      },
+      {
+        "key": "D",
+        "text": "无任何责任"
+      }
+    ],
+    "answer": "B",
+    "explanation": "事务所对注册会计师依法承办的业务承担民事责任。"
+  },
+  {
+    "id": "q0784",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "八、政策与法律易错多选题（4题）",
+    "type": "multiple",
+    "stem": "财会监督体系的监督主体包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "财政部门"
+      },
+      {
+        "key": "B",
+        "text": "有关部门"
+      },
+      {
+        "key": "C",
+        "text": "各单位"
+      },
+      {
+        "key": "D",
+        "text": "中介机构和行业协会"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "五类主体共同构成财会监督体系。"
+  },
+  {
+    "id": "q0785",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "八、政策与法律易错多选题（4题）",
+    "type": "multiple",
+    "stem": "国办发〔2021〕30号重点整治的行业问题包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "挂名执业"
+      },
+      {
+        "key": "B",
+        "text": "超出胜任能力执业"
+      },
+      {
+        "key": "C",
+        "text": "网络售卖审计报告"
+      },
+      {
+        "key": "D",
+        "text": "低价恶性竞争"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "均属于规范审计秩序的重点治理对象。"
+  },
+  {
+    "id": "q0786",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "八、政策与法律易错多选题（4题）",
+    "type": "multiple",
+    "stem": "会计师事务所一体化管理通常涉及：",
+    "options": [
+      {
+        "key": "A",
+        "text": "人事"
+      },
+      {
+        "key": "B",
+        "text": "财务"
+      },
+      {
+        "key": "C",
+        "text": "业务和技术标准"
+      },
+      {
+        "key": "D",
+        "text": "信息管理"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "总所应对分所实施实质性统一管理。"
+  },
+  {
+    "id": "q0787",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "八、政策与法律易错多选题（4题）",
+    "type": "multiple",
+    "stem": "注册会计师依法执行审计业务出具报告时，不得有的行为包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "明知委托人财务处理直接损害使用人利益而不指明"
+      },
+      {
+        "key": "B",
+        "text": "明知财务处理导致重大误解而不指明"
+      },
+      {
+        "key": "C",
+        "text": "明知报表重要事项有不实内容而不指明"
+      },
+      {
+        "key": "D",
+        "text": "在证据充分时发表恰当意见"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "前三项属于法律禁止行为。"
+  },
+  {
+    "id": "q0788",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "九、政策与法律易错判断题（3题）",
+    "type": "judge",
+    "stem": "财会监督仅指财政部门对行政事业单位财政收支开展的监督。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "财会监督是多主体、广覆盖的监督体系。"
+  },
+  {
+    "id": "q0789",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "九、政策与法律易错判断题（3题）",
+    "type": "judge",
+    "stem": "会计师事务所可以用低价作为审计服务招投标的唯一竞争标准。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "政策明确反对以低价为唯一中标标准。"
+  },
+  {
+    "id": "q0790",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "policy",
+    "tags": [
+      "policy",
+      "laws"
+    ],
+    "categoryTitle": "行业重要政策性文件",
+    "section": "九、政策与法律易错判断题（3题）",
+    "type": "judge",
+    "stem": "注册会计师与委托单位存在利害关系时，应当回避；委托人有权要求其回避。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "这是注册会计师法规定的回避要求。"
+  },
+  {
+    "id": "q0791",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "注册会计师因客户施压而缩小必要审计范围，主要面临：",
+    "options": [
+      {
+        "key": "A",
+        "text": "自身利益威胁"
+      },
+      {
+        "key": "B",
+        "text": "自我评价威胁"
+      },
+      {
+        "key": "C",
+        "text": "外部压力威胁"
+      },
+      {
+        "key": "D",
+        "text": "过度推介威胁"
+      }
+    ],
+    "answer": "C",
+    "explanation": "客户威胁或施压通常形成外部压力威胁。"
+  },
+  {
+    "id": "q0792",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "事务所为审计客户编制会计记录后又审计该记录，主要产生：",
+    "options": [
+      {
+        "key": "A",
+        "text": "自我评价威胁"
+      },
+      {
+        "key": "B",
+        "text": "密切关系威胁"
+      },
+      {
+        "key": "C",
+        "text": "过度推介威胁"
+      },
+      {
+        "key": "D",
+        "text": "保密威胁"
+      }
+    ],
+    "answer": "A",
+    "explanation": "审计自身完成的工作会削弱客观评价能力。"
+  },
+  {
+    "id": "q0793",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "项目合伙人的配偶持有审计客户少量直接经济利益，正确处理是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "金额小可忽略"
+      },
+      {
+        "key": "B",
+        "text": "直接经济利益通常必须处置"
+      },
+      {
+        "key": "C",
+        "text": "仅向客户披露即可"
+      },
+      {
+        "key": "D",
+        "text": "增加样本量即可"
+      }
+    ],
+    "answer": "B",
+    "explanation": "项目组成员主要近亲属的直接经济利益通常损害独立性。"
+  },
+  {
+    "id": "q0794",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "审计项目组成员接受客户明显不重大且无关紧要的礼品，首先应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "自动视为允许"
+      },
+      {
+        "key": "B",
+        "text": "评价其意图和可能产生的威胁"
+      },
+      {
+        "key": "C",
+        "text": "计入审计收费"
+      },
+      {
+        "key": "D",
+        "text": "转赠同事即可"
+      }
+    ],
+    "answer": "B",
+    "explanation": "礼品和款待需同时考虑价值、性质、频率及意图。"
+  },
+  {
+    "id": "q0795",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "事务所收入过度依赖某一审计客户，最直接产生：",
+    "options": [
+      {
+        "key": "A",
+        "text": "自身利益和外部压力威胁"
+      },
+      {
+        "key": "B",
+        "text": "自我评价和保密威胁"
+      },
+      {
+        "key": "C",
+        "text": "过度推介和密切关系威胁"
+      },
+      {
+        "key": "D",
+        "text": "无任何威胁"
+      }
+    ],
+    "answer": "A",
+    "explanation": "收费依赖会影响失去客户时的经济利益并带来压力。"
+  },
+  {
+    "id": "q0796",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "注册会计师获知客户拟实施洗钱活动，保密原则意味着：",
+    "options": [
+      {
+        "key": "A",
+        "text": "任何情况下不得披露"
+      },
+      {
+        "key": "B",
+        "text": "应考虑法律法规规定的报告义务"
+      },
+      {
+        "key": "C",
+        "text": "只能告诉朋友"
+      },
+      {
+        "key": "D",
+        "text": "删除相关底稿"
+      }
+    ],
+    "answer": "B",
+    "explanation": "保密原则不阻止依法履行披露或报告义务。"
+  },
+  {
+    "id": "q0797",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "1918年《会计师暂行章程》的行业意义是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "标志中国注册会计师制度诞生"
+      },
+      {
+        "key": "B",
+        "text": "标志中注协成立"
+      },
+      {
+        "key": "C",
+        "text": "标志风险导向审计引入"
+      },
+      {
+        "key": "D",
+        "text": "标志质量管理准则发布"
+      }
+    ],
+    "answer": "A",
+    "explanation": "1918年通常被视为我国注册会计师制度的开端。"
+  },
+  {
+    "id": "q0798",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十、职业道德易错单选题（8题）",
+    "type": "single",
+    "stem": "中国注册会计师协会成立于：",
+    "options": [
+      {
+        "key": "A",
+        "text": "1980年"
+      },
+      {
+        "key": "B",
+        "text": "1988年"
+      },
+      {
+        "key": "C",
+        "text": "1993年"
+      },
+      {
+        "key": "D",
+        "text": "2006年"
+      }
+    ],
+    "answer": "B",
+    "explanation": "1988年中国注册会计师协会成立。"
+  },
+  {
+    "id": "q0799",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十一、职业道德易错多选题（4题）",
+    "type": "multiple",
+    "stem": "有助于保持专业胜任能力和勤勉尽责的措施包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "持续职业发展"
+      },
+      {
+        "key": "B",
+        "text": "充分了解业务和行业"
+      },
+      {
+        "key": "C",
+        "text": "合理计划并监督专业服务"
+      },
+      {
+        "key": "D",
+        "text": "接受超出自身能力且无法获得帮助的业务"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "不具备胜任能力且无法获得适当帮助时不应承接业务。"
+  },
+  {
+    "id": "q0800",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十一、职业道德易错多选题（4题）",
+    "type": "multiple",
+    "stem": "应对超出可接受水平的职业道德威胁，可采取：",
+    "options": [
+      {
+        "key": "A",
+        "text": "消除产生威胁的情形"
+      },
+      {
+        "key": "B",
+        "text": "采取防范措施"
+      },
+      {
+        "key": "C",
+        "text": "拒绝或终止特定职业活动"
+      },
+      {
+        "key": "D",
+        "text": "忽略并继续执业"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "无法消除或降低威胁时应拒绝或终止相关活动。"
+  },
+  {
+    "id": "q0801",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十一、职业道德易错多选题（4题）",
+    "type": "multiple",
+    "stem": "在法律法规允许提供相关非鉴证服务的前提下，降低自我评价威胁的措施可能包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "由非审计项目组人员提供服务"
+      },
+      {
+        "key": "B",
+        "text": "由未参与该服务的适当复核人员复核"
+      },
+      {
+        "key": "C",
+        "text": "避免承担客户管理层职责"
+      },
+      {
+        "key": "D",
+        "text": "由原服务人员自行评价自己的工作"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "自行评价不能降低自我评价威胁。"
+  },
+  {
+    "id": "q0802",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十一、职业道德易错多选题（4题）",
+    "type": "multiple",
+    "stem": "注册会计师对职业活动中获知的信息可以披露的情形包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "法律法规要求披露"
+      },
+      {
+        "key": "B",
+        "text": "客户授权且法律允许"
+      },
+      {
+        "key": "C",
+        "text": "为履行专业职责且法律允许"
+      },
+      {
+        "key": "D",
+        "text": "为个人获利出售给第三方"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "不得利用保密信息为自己或第三方谋取不当利益。"
+  },
+  {
+    "id": "q0803",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十二、职业道德易错判断题（3题）",
+    "type": "judge",
+    "stem": "形式上的独立性以理性且掌握充分信息的第三方是否认为独立性受到损害为判断视角。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "形式独立强调避免外界合理怀疑。"
+  },
+  {
+    "id": "q0804",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十二、职业道德易错判断题（3题）",
+    "type": "judge",
+    "stem": "只要客户同意，事务所就可以对审计业务采用或有收费安排。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "审计等鉴证业务的或有收费通常被禁止。"
+  },
+  {
+    "id": "q0805",
+    "sourceFile": "08_机考补充_CAS审计政策职业道德易错题100题.md",
+    "category": "ethics",
+    "tags": [
+      "ethics",
+      "laws"
+    ],
+    "categoryTitle": "行业史与职业道德",
+    "section": "十二、职业道德易错判断题（3题）",
+    "type": "judge",
+    "stem": "注册会计师离开事务所后，对执业过程中获知的信息不再承担保密义务。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "保密义务通常在职业关系终止后仍然持续。"
+  },
+  {
+    "id": "q0806",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "为执行不可撤销销售合同而持有的存货，其可变现净值通常以何者为基础确定：",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场一般售价"
+      },
+      {
+        "key": "B",
+        "text": "合同价格"
+      },
+      {
+        "key": "C",
+        "text": "历史成本"
+      },
+      {
+        "key": "D",
+        "text": "重置成本"
+      }
+    ],
+    "answer": "B",
+    "explanation": "有合同部分以合同价格为基础，无合同部分以一般销售价格为基础。"
+  },
+  {
+    "id": "q0807",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "已计提跌价准备的存货价值恢复时，转回金额应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "超过原计提金额"
+      },
+      {
+        "key": "B",
+        "text": "以原计提跌价准备金额为限"
+      },
+      {
+        "key": "C",
+        "text": "计入其他综合收益"
+      },
+      {
+        "key": "D",
+        "text": "计入资本公积"
+      }
+    ],
+    "answer": "B",
+    "explanation": "存货跌价准备转回不得超过原已计提金额。"
+  },
+  {
+    "id": "q0808",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "固定资产达到预定可使用状态后发生的日常修理费通常计入：",
+    "options": [
+      {
+        "key": "A",
+        "text": "固定资产成本"
+      },
+      {
+        "key": "B",
+        "text": "当期损益"
+      },
+      {
+        "key": "C",
+        "text": "在建工程"
+      },
+      {
+        "key": "D",
+        "text": "资本公积"
+      }
+    ],
+    "answer": "B",
+    "explanation": "不满足资本化条件的日常修理支出费用化。"
+  },
+  {
+    "id": "q0809",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业更新改造固定资产时，被替换部分的账面价值应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "继续保留"
+      },
+      {
+        "key": "B",
+        "text": "终止确认"
+      },
+      {
+        "key": "C",
+        "text": "转入商誉"
+      },
+      {
+        "key": "D",
+        "text": "转入其他综合收益"
+      }
+    ],
+    "answer": "B",
+    "explanation": "新部分满足确认条件时资本化，被替换部分终止确认。"
+  },
+  {
+    "id": "q0810",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "使用寿命不确定的无形资产在持有期间应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "按10年摊销"
+      },
+      {
+        "key": "B",
+        "text": "不摊销但至少每年减值测试"
+      },
+      {
+        "key": "C",
+        "text": "不摊销也不测试减值"
+      },
+      {
+        "key": "D",
+        "text": "按税法年限摊销"
+      }
+    ],
+    "answer": "B",
+    "explanation": "使用寿命不确定的无形资产不摊销但需定期减值测试。"
+  },
+  {
+    "id": "q0811",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "房地产开发企业取得用于建造对外出售商品房的土地使用权，通常计入：",
+    "options": [
+      {
+        "key": "A",
+        "text": "无形资产"
+      },
+      {
+        "key": "B",
+        "text": "存货成本"
+      },
+      {
+        "key": "C",
+        "text": "投资性房地产"
+      },
+      {
+        "key": "D",
+        "text": "固定资产"
+      }
+    ],
+    "answer": "B",
+    "explanation": "用于开发出售商品房的土地使用权属于相关存货成本。"
+  },
+  {
+    "id": "q0812",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业向职工提供辞退福利，应当在不能单方面撤回辞退计划与确认重组成本两者何时确认：",
+    "options": [
+      {
+        "key": "A",
+        "text": "较早者"
+      },
+      {
+        "key": "B",
+        "text": "较晚者"
+      },
+      {
+        "key": "C",
+        "text": "实际支付时"
+      },
+      {
+        "key": "D",
+        "text": "职工离职后"
+      }
+    ],
+    "answer": "A",
+    "explanation": "辞退福利在企业不能撤回要约或确认相关重组成本的较早日确认。"
+  },
+  {
+    "id": "q0813",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "设定受益计划净负债或净资产的重新计量通常计入：",
+    "options": [
+      {
+        "key": "A",
+        "text": "当期损益"
+      },
+      {
+        "key": "B",
+        "text": "其他综合收益且以后不重分类至损益"
+      },
+      {
+        "key": "C",
+        "text": "资本公积"
+      },
+      {
+        "key": "D",
+        "text": "营业外收支"
+      }
+    ],
+    "answer": "B",
+    "explanation": "重新计量计入其他综合收益，后续不转入损益。"
+  },
+  {
+    "id": "q0814",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "权益结算股份支付修改条款增加所授权益工具公允价值时，企业应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "忽略有利修改"
+      },
+      {
+        "key": "B",
+        "text": "确认增加的公允价值"
+      },
+      {
+        "key": "C",
+        "text": "冲回原费用"
+      },
+      {
+        "key": "D",
+        "text": "改按现金结算"
+      }
+    ],
+    "answer": "B",
+    "explanation": "对职工有利的修改应考虑其增量公允价值。"
+  },
+  {
+    "id": "q0815",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "借款费用开始资本化不要求同时满足的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "资产支出已经发生"
+      },
+      {
+        "key": "B",
+        "text": "借款费用已经发生"
+      },
+      {
+        "key": "C",
+        "text": "必要购建活动已经开始"
+      },
+      {
+        "key": "D",
+        "text": "资产已达到预定可使用状态"
+      }
+    ],
+    "answer": "D",
+    "explanation": "D是停止资本化的条件而非开始条件。"
+  },
+  {
+    "id": "q0816",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "外币交易初始确认时，原则上采用：",
+    "options": [
+      {
+        "key": "A",
+        "text": "交易发生日即期汇率"
+      },
+      {
+        "key": "B",
+        "text": "资产负债表日汇率"
+      },
+      {
+        "key": "C",
+        "text": "合同结束日汇率"
+      },
+      {
+        "key": "D",
+        "text": "任意预算汇率"
+      }
+    ],
+    "answer": "A",
+    "explanation": "也可采用按系统合理方法确定、与交易日汇率近似的汇率。"
+  },
+  {
+    "id": "q0817",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "资产负债表日外币货币性项目应当采用：",
+    "options": [
+      {
+        "key": "A",
+        "text": "历史汇率"
+      },
+      {
+        "key": "B",
+        "text": "资产负债表日即期汇率"
+      },
+      {
+        "key": "C",
+        "text": "平均汇率"
+      },
+      {
+        "key": "D",
+        "text": "预算汇率"
+      }
+    ],
+    "answer": "B",
+    "explanation": "外币货币性项目期末按即期汇率折算并确认汇兑差额。"
+  },
+  {
+    "id": "q0818",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "收入准则下，合同成立条件不包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "合同各方已批准并承诺履约"
+      },
+      {
+        "key": "B",
+        "text": "权利和付款条款可识别"
+      },
+      {
+        "key": "C",
+        "text": "合同具有商业实质"
+      },
+      {
+        "key": "D",
+        "text": "客户必须已经支付全部价款"
+      }
+    ],
+    "answer": "D",
+    "explanation": "只需很可能收回有权取得的对价，不要求已全额付款。"
+  },
+  {
+    "id": "q0819",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业估计可变对价时，应选择的方法是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "一律期望值法"
+      },
+      {
+        "key": "B",
+        "text": "一律最可能金额法"
+      },
+      {
+        "key": "C",
+        "text": "能够更好预测有权收取对价金额的方法"
+      },
+      {
+        "key": "D",
+        "text": "由客户指定"
+      }
+    ],
+    "answer": "C",
+    "explanation": "根据合同特点在期望值和最可能金额法中择优并保持一致。"
+  },
+  {
+    "id": "q0820",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "售后代管商品安排下，客户取得控制权的必要条件通常不包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "安排有实质商业理由"
+      },
+      {
+        "key": "B",
+        "text": "商品单独识别并可随时交付"
+      },
+      {
+        "key": "C",
+        "text": "企业不能使用或提供给其他客户"
+      },
+      {
+        "key": "D",
+        "text": "客户必须到仓库现场验收"
+      }
+    ],
+    "answer": "D",
+    "explanation": "是否现场验收不是售后代管安排的必备条件。"
+  },
+  {
+    "id": "q0821",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "委托代销安排中，受托方尚未向最终客户销售且可退回商品时，委托方通常：",
+    "options": [
+      {
+        "key": "A",
+        "text": "已确认收入"
+      },
+      {
+        "key": "B",
+        "text": "尚未转移控制权"
+      },
+      {
+        "key": "C",
+        "text": "确认处置损益"
+      },
+      {
+        "key": "D",
+        "text": "确认融资收益"
+      }
+    ],
+    "answer": "B",
+    "explanation": "控制权通常在受托方向最终客户销售时转移。"
+  },
+  {
+    "id": "q0822",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业按固定价格回购已售商品且回购价低于原售价，实质上可能属于：",
+    "options": [
+      {
+        "key": "A",
+        "text": "租赁"
+      },
+      {
+        "key": "B",
+        "text": "融资交易"
+      },
+      {
+        "key": "C",
+        "text": "无偿捐赠"
+      },
+      {
+        "key": "D",
+        "text": "政府补助"
+      }
+    ],
+    "answer": "A",
+    "explanation": "客户缺乏控制且回购价低于售价时通常按租赁处理。"
+  },
+  {
+    "id": "q0823",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业在向客户转让商品前能够控制该商品，通常表明企业是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "代理人"
+      },
+      {
+        "key": "B",
+        "text": "主要责任人"
+      },
+      {
+        "key": "C",
+        "text": "受托人"
+      },
+      {
+        "key": "D",
+        "text": "债权人"
+      }
+    ],
+    "answer": "B",
+    "explanation": "主要责任人按总额确认收入，代理人按净额确认佣金。"
+  },
+  {
+    "id": "q0824",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "客户续约选择权提供其不续约无法取得的重大权利时，该选择权：",
+    "options": [
+      {
+        "key": "A",
+        "text": "不属于履约义务"
+      },
+      {
+        "key": "B",
+        "text": "构成单项履约义务"
+      },
+      {
+        "key": "C",
+        "text": "计入财务费用"
+      },
+      {
+        "key": "D",
+        "text": "直接冲减成本"
+      }
+    ],
+    "answer": "B",
+    "explanation": "交易价格需分摊至重大权利并在行权或失效时确认收入。"
+  },
+  {
+    "id": "q0825",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "不可退还的初始费与已承诺商品或服务无关时，通常应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "收取时立即确认收入"
+      },
+      {
+        "key": "B",
+        "text": "作为未来商品或服务的预收款处理"
+      },
+      {
+        "key": "C",
+        "text": "计入资本公积"
+      },
+      {
+        "key": "D",
+        "text": "冲减销售费用"
+      }
+    ],
+    "answer": "B",
+    "explanation": "初始费本身不代表履约，应在相关履约期间确认收入。"
+  },
+  {
+    "id": "q0826",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "与资产相关的政府补助采用总额法时，应当确认为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "递延收益"
+      },
+      {
+        "key": "B",
+        "text": "实收资本"
+      },
+      {
+        "key": "C",
+        "text": "其他综合收益"
+      },
+      {
+        "key": "D",
+        "text": "应付账款"
+      }
+    ],
+    "answer": "A",
+    "explanation": "递延收益在相关资产使用寿命内合理、系统地计入损益。"
+  },
+  {
+    "id": "q0827",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "债权人受让存货抵偿债权时，放弃债权公允价值与账面价值的差额通常计入：",
+    "options": [
+      {
+        "key": "A",
+        "text": "投资收益"
+      },
+      {
+        "key": "B",
+        "text": "主营业务收入"
+      },
+      {
+        "key": "C",
+        "text": "其他综合收益"
+      },
+      {
+        "key": "D",
+        "text": "资本公积"
+      }
+    ],
+    "answer": "A",
+    "explanation": "债权人按金融工具和债务重组准则确认相关损益。"
+  },
+  {
+    "id": "q0828",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "非货币性资产交换不具有商业实质时，换入资产原则上以何者为基础计量：",
+    "options": [
+      {
+        "key": "A",
+        "text": "换出资产账面价值"
+      },
+      {
+        "key": "B",
+        "text": "换入资产公允价值"
+      },
+      {
+        "key": "C",
+        "text": "评估增值"
+      },
+      {
+        "key": "D",
+        "text": "未来现金流最大值"
+      }
+    ],
+    "answer": "A",
+    "explanation": "不满足公允价值计量条件时采用账面价值基础，不确认交换损益。"
+  },
+  {
+    "id": "q0829",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业基本确定能够收到的未决诉讼赔偿，应确认为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "或有资产披露即可"
+      },
+      {
+        "key": "B",
+        "text": "一项资产"
+      },
+      {
+        "key": "C",
+        "text": "递延收益"
+      },
+      {
+        "key": "D",
+        "text": "预计负债抵减项且可无限抵减"
+      }
+    ],
+    "answer": "B",
+    "explanation": "由或有事项形成的资产只有基本确定能收到时才确认。"
+  },
+  {
+    "id": "q0830",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "待执行合同变成亏损合同且存在不可撤销义务时，应先：",
+    "options": [
+      {
+        "key": "A",
+        "text": "确认预计负债且不测试资产减值"
+      },
+      {
+        "key": "B",
+        "text": "对合同标的资产进行减值测试"
+      },
+      {
+        "key": "C",
+        "text": "确认收入"
+      },
+      {
+        "key": "D",
+        "text": "冲减资本公积"
+      }
+    ],
+    "answer": "B",
+    "explanation": "先确认标的资产减值，再就超过减值损失部分确认预计负债。"
+  },
+  {
+    "id": "q0831",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "资产负债表日后诉讼结案证实报告期末已有义务金额，应作为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "非调整事项"
+      },
+      {
+        "key": "B",
+        "text": "调整事项"
+      },
+      {
+        "key": "C",
+        "text": "会计政策变更"
+      },
+      {
+        "key": "D",
+        "text": "未来交易"
+      }
+    ],
+    "answer": "B",
+    "explanation": "结案提供了报告期末状况的进一步证据。"
+  },
+  {
+    "id": "q0832",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "甲公司的关键管理人员能够控制乙公司，甲公司与乙公司之间通常：",
+    "options": [
+      {
+        "key": "A",
+        "text": "不构成关联方"
+      },
+      {
+        "key": "B",
+        "text": "构成关联方"
+      },
+      {
+        "key": "C",
+        "text": "仅在交易时构成"
+      },
+      {
+        "key": "D",
+        "text": "仅在同业时构成"
+      }
+    ],
+    "answer": "B",
+    "explanation": "关键管理人员控制的实体属于报告主体关联方范围。"
+  },
+  {
+    "id": "q0833",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "经营分部的分部收入达到所有分部收入合计数的多少通常满足量化标准：",
+    "options": [
+      {
+        "key": "A",
+        "text": "5%"
+      },
+      {
+        "key": "B",
+        "text": "10%"
+      },
+      {
+        "key": "C",
+        "text": "20%"
+      },
+      {
+        "key": "D",
+        "text": "50%"
+      }
+    ],
+    "answer": "B",
+    "explanation": "收入、损益绝对额和资产均有10%的量化门槛。"
+  },
+  {
+    "id": "q0834",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业将三个月后到期、流动性强且价值变动风险很小的国债投资通常列为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "现金等价物"
+      },
+      {
+        "key": "B",
+        "text": "长期股权投资"
+      },
+      {
+        "key": "C",
+        "text": "存货"
+      },
+      {
+        "key": "D",
+        "text": "固定资产"
+      }
+    ],
+    "answer": "A",
+    "explanation": "期限短、流动性强、易转换且风险很小的投资可作现金等价物。"
+  },
+  {
+    "id": "q0835",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "企业在资产负债表日后与银行签订长期再融资协议，若报告期末无延期清偿权，该负债期末应列为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "非流动负债"
+      },
+      {
+        "key": "B",
+        "text": "流动负债"
+      },
+      {
+        "key": "C",
+        "text": "所有者权益"
+      },
+      {
+        "key": "D",
+        "text": "或有负债"
+      }
+    ],
+    "answer": "B",
+    "explanation": "分类依据报告期末已经存在的权利。"
+  },
+  {
+    "id": "q0836",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "计算基本每股收益时，企业发生配股且配股价低于市价，通常需要：",
+    "options": [
+      {
+        "key": "A",
+        "text": "不调整以前期间"
+      },
+      {
+        "key": "B",
+        "text": "按理论除权因素调整以前期间每股收益"
+      },
+      {
+        "key": "C",
+        "text": "只调整当期净利润"
+      },
+      {
+        "key": "D",
+        "text": "计入其他综合收益"
+      }
+    ],
+    "answer": "B",
+    "explanation": "配股含送股因素，需要追溯调整每股收益比较数据。"
+  },
+  {
+    "id": "q0837",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "已处置或划分为持有待售且代表独立主要业务地区的组成部分属于：",
+    "options": [
+      {
+        "key": "A",
+        "text": "终止经营"
+      },
+      {
+        "key": "B",
+        "text": "投资性房地产"
+      },
+      {
+        "key": "C",
+        "text": "会计估计变更"
+      },
+      {
+        "key": "D",
+        "text": "共同经营"
+      }
+    ],
+    "answer": "A",
+    "explanation": "终止经营需代表独立主要业务或地区等重大组成部分。"
+  },
+  {
+    "id": "q0838",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "非同一控制企业合并中，分类为权益的或有对价后续：",
+    "options": [
+      {
+        "key": "A",
+        "text": "每期重新计量计入损益"
+      },
+      {
+        "key": "B",
+        "text": "不重新计量，结算计入权益"
+      },
+      {
+        "key": "C",
+        "text": "摊余成本计量"
+      },
+      {
+        "key": "D",
+        "text": "冲减商誉"
+      }
+    ],
+    "answer": "B",
+    "explanation": "分类为资产或负债的或有对价才按相关准则后续计量。"
+  },
+  {
+    "id": "q0839",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "反向购买在编制合并财务报表时，会计上的购买方通常是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "发行权益证券的法律母公司"
+      },
+      {
+        "key": "B",
+        "text": "权益被取得的法律子公司"
+      },
+      {
+        "key": "C",
+        "text": "任意指定实体"
+      },
+      {
+        "key": "D",
+        "text": "最大债权人"
+      }
+    ],
+    "answer": "B",
+    "explanation": "法律子公司可能取得合并后主体控制权，成为会计购买方。"
+  },
+  {
+    "id": "q0840",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "分步实现非同一控制合并时，原权益法核算投资形成的其他综合收益，通常应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "永久保留"
+      },
+      {
+        "key": "B",
+        "text": "按处置相关资产或负债相同基础处理"
+      },
+      {
+        "key": "C",
+        "text": "全部冲减商誉"
+      },
+      {
+        "key": "D",
+        "text": "全部计入资本公积"
+      }
+    ],
+    "answer": "B",
+    "explanation": "原股权相关其他综合收益按准则规定结转或转入留存收益。"
+  },
+  {
+    "id": "q0841",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "母子公司采用的会计政策不一致时，编制合并财务报表应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "保留差异"
+      },
+      {
+        "key": "B",
+        "text": "按母公司会计政策对子公司报表进行调整"
+      },
+      {
+        "key": "C",
+        "text": "按子公司政策调整母公司"
+      },
+      {
+        "key": "D",
+        "text": "不合并该子公司"
+      }
+    ],
+    "answer": "B",
+    "explanation": "合并报表要求统一会计政策和会计期间。"
+  },
+  {
+    "id": "q0842",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "子公司发生超额亏损时，少数股东应分担的亏损超过其权益份额，合并报表中应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "全由母公司承担"
+      },
+      {
+        "key": "B",
+        "text": "继续冲减少数股东权益"
+      },
+      {
+        "key": "C",
+        "text": "转为母公司应收款"
+      },
+      {
+        "key": "D",
+        "text": "不确认超额亏损"
+      }
+    ],
+    "answer": "B",
+    "explanation": "非控制性权益可出现负数。"
+  },
+  {
+    "id": "q0843",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "共同经营参与方应就其在共同经营中的份额确认：",
+    "options": [
+      {
+        "key": "A",
+        "text": "仅一项长期股权投资"
+      },
+      {
+        "key": "B",
+        "text": "相关资产、负债、收入和费用"
+      },
+      {
+        "key": "C",
+        "text": "仅投资收益"
+      },
+      {
+        "key": "D",
+        "text": "商誉"
+      }
+    ],
+    "answer": "B",
+    "explanation": "共同经营参与方享有资产权利并承担负债义务。"
+  },
+  {
+    "id": "q0844",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "投资方采用权益法核算并向联营企业出售资产形成未实现内部交易损益时，应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "全额确认"
+      },
+      {
+        "key": "B",
+        "text": "按持股比例抵销归属于投资方的部分"
+      },
+      {
+        "key": "C",
+        "text": "全额计入资本公积"
+      },
+      {
+        "key": "D",
+        "text": "不作处理"
+      }
+    ],
+    "answer": "B",
+    "explanation": "顺流交易未实现损益按投资比例抵销。"
+  },
+  {
+    "id": "q0845",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "自用房地产停止自用并改为赚取租金，采用成本模式计量时，转换日应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "按公允价值确认损益"
+      },
+      {
+        "key": "B",
+        "text": "按账面价值转换"
+      },
+      {
+        "key": "C",
+        "text": "确认商誉"
+      },
+      {
+        "key": "D",
+        "text": "冲减留存收益"
+      }
+    ],
+    "answer": "B",
+    "explanation": "成本模式下按转换前账面价值转入投资性房地产。"
+  },
+  {
+    "id": "q0846",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "生物资产收获的农产品在收获时通常按何者计量：",
+    "options": [
+      {
+        "key": "A",
+        "text": "历史成本"
+      },
+      {
+        "key": "B",
+        "text": "公允价值减去处置费用"
+      },
+      {
+        "key": "C",
+        "text": "可变现净值"
+      },
+      {
+        "key": "D",
+        "text": "名义金额"
+      }
+    ],
+    "answer": "B",
+    "explanation": "该金额成为农产品后续适用存货准则的成本。"
+  },
+  {
+    "id": "q0847",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "持有待售的非流动资产在初始计量或重新计量时，通常按账面价值与何者孰低计量：",
+    "options": [
+      {
+        "key": "A",
+        "text": "公允价值"
+      },
+      {
+        "key": "B",
+        "text": "公允价值减去出售费用后的净额"
+      },
+      {
+        "key": "C",
+        "text": "可收回金额"
+      },
+      {
+        "key": "D",
+        "text": "重置成本"
+      }
+    ],
+    "answer": "B",
+    "explanation": "划分为持有待售后按两者孰低计量并停止折旧。"
+  },
+  {
+    "id": "q0848",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "金融资产发生重分类的前提是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "管理层改变持有意图"
+      },
+      {
+        "key": "B",
+        "text": "企业改变管理金融资产的业务模式"
+      },
+      {
+        "key": "C",
+        "text": "市场利率变化"
+      },
+      {
+        "key": "D",
+        "text": "公允价值下降"
+      }
+    ],
+    "answer": "B",
+    "explanation": "只有业务模式发生实际改变时才重分类，且极少发生。"
+  },
+  {
+    "id": "q0849",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "现金流量套期中，套期工具利得或损失的有效部分通常计入：",
+    "options": [
+      {
+        "key": "A",
+        "text": "当期损益"
+      },
+      {
+        "key": "B",
+        "text": "其他综合收益"
+      },
+      {
+        "key": "C",
+        "text": "商誉"
+      },
+      {
+        "key": "D",
+        "text": "实收资本"
+      }
+    ],
+    "answer": "B",
+    "explanation": "无效部分通常计入当期损益。"
+  },
+  {
+    "id": "q0850",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "确定资产公允价值时，直接归属于出售该资产的交易费用应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "从公允价值中扣除"
+      },
+      {
+        "key": "B",
+        "text": "不作为公允价值特征扣除"
+      },
+      {
+        "key": "C",
+        "text": "计入公允价值层次"
+      },
+      {
+        "key": "D",
+        "text": "计入资产历史成本"
+      }
+    ],
+    "answer": "B",
+    "explanation": "交易费用不是资产特征；运输费用在地点是资产特征时另行考虑。"
+  },
+  {
+    "id": "q0851",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "承租人对未作为单独租赁核算的租赁变更，应在变更生效日：",
+    "options": [
+      {
+        "key": "A",
+        "text": "不调整"
+      },
+      {
+        "key": "B",
+        "text": "重新计量租赁负债并相应调整使用权资产"
+      },
+      {
+        "key": "C",
+        "text": "全部计入财务费用"
+      },
+      {
+        "key": "D",
+        "text": "终止全部租赁"
+      }
+    ],
+    "answer": "B",
+    "explanation": "应采用修订后折现率重新计量。"
+  },
+  {
+    "id": "q0852",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "售后租回中资产转让不构成销售，卖方兼承租人收到的现金应确认为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "销售收入"
+      },
+      {
+        "key": "B",
+        "text": "金融负债"
+      },
+      {
+        "key": "C",
+        "text": "递延收益"
+      },
+      {
+        "key": "D",
+        "text": "其他综合收益"
+      }
+    ],
+    "answer": "B",
+    "explanation": "交易实质是以资产为担保的融资。"
+  },
+  {
+    "id": "q0853",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "非同一控制合并初始确认商誉产生的应纳税暂时性差异，通常：",
+    "options": [
+      {
+        "key": "A",
+        "text": "确认递延所得税负债"
+      },
+      {
+        "key": "B",
+        "text": "不确认递延所得税负债"
+      },
+      {
+        "key": "C",
+        "text": "确认递延所得税资产"
+      },
+      {
+        "key": "D",
+        "text": "冲减资本公积"
+      }
+    ],
+    "answer": "B",
+    "explanation": "商誉初始确认形成的相关递延所得税负债属于确认豁免。"
+  },
+  {
+    "id": "q0854",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "总部资产不能按合理一致基础分摊至资产组时，企业应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "不测试总部资产"
+      },
+      {
+        "key": "B",
+        "text": "在包含相关资产组的最小资产组组合层面测试"
+      },
+      {
+        "key": "C",
+        "text": "直接全额减值"
+      },
+      {
+        "key": "D",
+        "text": "仅测试商誉"
+      }
+    ],
+    "answer": "B",
+    "explanation": "应在可合理分摊的最小资产组组合层面比较可收回金额。"
+  },
+  {
+    "id": "q0855",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "一、CAS综合单选题（50题）",
+    "type": "single",
+    "stem": "对不重要的前期差错，企业通常可以：",
+    "options": [
+      {
+        "key": "A",
+        "text": "必须追溯重述"
+      },
+      {
+        "key": "B",
+        "text": "调整发现当期相关项目"
+      },
+      {
+        "key": "C",
+        "text": "永不更正"
+      },
+      {
+        "key": "D",
+        "text": "只在附注披露"
+      }
+    ],
+    "answer": "B",
+    "explanation": "重要前期差错才要求追溯重述，除非不可行。"
+  },
+  {
+    "id": "q0856",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "委托外单位加工存货的实际成本通常包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "实际耗用原材料成本"
+      },
+      {
+        "key": "B",
+        "text": "支付的加工费"
+      },
+      {
+        "key": "C",
+        "text": "应负担的运输装卸费"
+      },
+      {
+        "key": "D",
+        "text": "可抵扣的增值税进项税额"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "可抵扣进项税额不计入委托加工存货成本。"
+  },
+  {
+    "id": "q0857",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "固定资产终止确认的情形包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "处于处置状态"
+      },
+      {
+        "key": "B",
+        "text": "预期通过使用或处置不能产生经济利益"
+      },
+      {
+        "key": "C",
+        "text": "已提足折旧仍继续使用"
+      },
+      {
+        "key": "D",
+        "text": "被替换部分符合终止确认条件"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "已提足折旧但仍使用的固定资产不因此终止确认。"
+  },
+  {
+    "id": "q0858",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "无形资产开发阶段支出资本化需要满足的条件包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "技术上具有可行性"
+      },
+      {
+        "key": "B",
+        "text": "有完成并使用或出售的意图"
+      },
+      {
+        "key": "C",
+        "text": "能证明产生经济利益的方式"
+      },
+      {
+        "key": "D",
+        "text": "支出能够可靠计量"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "还需具有足够资源完成开发并使用或出售。"
+  },
+  {
+    "id": "q0859",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "短期薪酬通常包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "工资奖金"
+      },
+      {
+        "key": "B",
+        "text": "职工福利费"
+      },
+      {
+        "key": "C",
+        "text": "短期带薪缺勤"
+      },
+      {
+        "key": "D",
+        "text": "设定受益计划退休金"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "退休金属于离职后福利。"
+  },
+  {
+    "id": "q0860",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "借款费用资本化暂停期间的判断条件包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "购建活动发生非正常中断"
+      },
+      {
+        "key": "B",
+        "text": "中断连续超过3个月"
+      },
+      {
+        "key": "C",
+        "text": "正常必要中断"
+      },
+      {
+        "key": "D",
+        "text": "资产支出暂停"
+      }
+    ],
+    "answer": "AB",
+    "explanation": "正常必要中断不暂停资本化。"
+  },
+  {
+    "id": "q0861",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "外币财务报表折算时，通常采用资产负债表日即期汇率折算的有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "资产"
+      },
+      {
+        "key": "B",
+        "text": "负债"
+      },
+      {
+        "key": "C",
+        "text": "实收资本"
+      },
+      {
+        "key": "D",
+        "text": "当期收入费用"
+      }
+    ],
+    "answer": "AB",
+    "explanation": "权益项目除未分配利润外多采用发生时汇率，收入费用可用交易日或近似汇率。"
+  },
+  {
+    "id": "q0862",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "在某一时段内履行履约义务的条件包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "客户在企业履约同时取得并消耗经济利益"
+      },
+      {
+        "key": "B",
+        "text": "客户能够控制企业履约过程中在建商品"
+      },
+      {
+        "key": "C",
+        "text": "商品无替代用途且企业有权就累计履约部分收款"
+      },
+      {
+        "key": "D",
+        "text": "企业仅在完工时有权收款且商品可改售"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "满足三项条件之一即可按时段确认收入。"
+  },
+  {
+    "id": "q0863",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "合同资产与应收款项的区别主要可能体现在：",
+    "options": [
+      {
+        "key": "A",
+        "text": "收款权是否仅取决于时间流逝"
+      },
+      {
+        "key": "B",
+        "text": "是否仍需履行其他义务才能收款"
+      },
+      {
+        "key": "C",
+        "text": "是否均属于金融资产"
+      },
+      {
+        "key": "D",
+        "text": "减值均适用预期信用损失要求"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "合同资产并非无条件收款权，但减值适用金融工具准则。"
+  },
+  {
+    "id": "q0864",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "企业应当将合同变更作为单独合同核算的条件包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "增加可明确区分的商品"
+      },
+      {
+        "key": "B",
+        "text": "增加的合同价款反映新增商品单独售价"
+      },
+      {
+        "key": "C",
+        "text": "原合同已全部履行"
+      },
+      {
+        "key": "D",
+        "text": "客户已支付全部价款"
+      }
+    ],
+    "answer": "AB",
+    "explanation": "两项条件同时满足时作为单独合同。"
+  },
+  {
+    "id": "q0865",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "政府补助的主要特征包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "来源于政府的经济资源"
+      },
+      {
+        "key": "B",
+        "text": "通常附有条件"
+      },
+      {
+        "key": "C",
+        "text": "包括政府作为所有者投入的资本"
+      },
+      {
+        "key": "D",
+        "text": "具有无偿性"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "政府资本性投入不属于政府补助。"
+  },
+  {
+    "id": "q0866",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "债务重组采用组合方式时，债务人可能涉及：",
+    "options": [
+      {
+        "key": "A",
+        "text": "以资产清偿债务"
+      },
+      {
+        "key": "B",
+        "text": "将债务转为权益工具"
+      },
+      {
+        "key": "C",
+        "text": "修改债务条款"
+      },
+      {
+        "key": "D",
+        "text": "免除全部会计处理"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "组合方式需分别按相关准则处理。"
+  },
+  {
+    "id": "q0867",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "判断非货币性资产交换具有商业实质时可考虑：",
+    "options": [
+      {
+        "key": "A",
+        "text": "未来现金流风险、时间或金额显著不同"
+      },
+      {
+        "key": "B",
+        "text": "换入换出资产特定主体价值显著不同"
+      },
+      {
+        "key": "C",
+        "text": "差异相对公允价值重大"
+      },
+      {
+        "key": "D",
+        "text": "交易是否产生增值税"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "税务形式不是商业实质判断的核心条件。"
+  },
+  {
+    "id": "q0868",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "或有事项形成的义务确认为预计负债需要同时满足：",
+    "options": [
+      {
+        "key": "A",
+        "text": "是现时义务"
+      },
+      {
+        "key": "B",
+        "text": "履行很可能导致经济利益流出"
+      },
+      {
+        "key": "C",
+        "text": "金额能够可靠计量"
+      },
+      {
+        "key": "D",
+        "text": "必须已经支付"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "实际支付不是确认预计负债的前提。"
+  },
+  {
+    "id": "q0869",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "资产负债表日后非调整事项可能包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "重大企业合并"
+      },
+      {
+        "key": "B",
+        "text": "重大火灾造成资产损失"
+      },
+      {
+        "key": "C",
+        "text": "报告期末已存在诉讼的结案"
+      },
+      {
+        "key": "D",
+        "text": "重大债务重组"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "C通常提供报告期末状况证据，属于调整事项。"
+  },
+  {
+    "id": "q0870",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "中期财务报告至少应包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "资产负债表"
+      },
+      {
+        "key": "B",
+        "text": "利润表"
+      },
+      {
+        "key": "C",
+        "text": "现金流量表"
+      },
+      {
+        "key": "D",
+        "text": "附注"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "中期财务报告至少包括四部分。"
+  },
+  {
+    "id": "q0871",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "每股收益准则中的潜在普通股包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "可转换公司债券"
+      },
+      {
+        "key": "B",
+        "text": "认股权证"
+      },
+      {
+        "key": "C",
+        "text": "股份期权"
+      },
+      {
+        "key": "D",
+        "text": "普通股股利"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "普通股股利不属于潜在普通股。"
+  },
+  {
+    "id": "q0872",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "合并财务报表抵销内部交易时可能涉及：",
+    "options": [
+      {
+        "key": "A",
+        "text": "内部债权债务"
+      },
+      {
+        "key": "B",
+        "text": "内部销售未实现损益"
+      },
+      {
+        "key": "C",
+        "text": "内部投资收益与利润分配"
+      },
+      {
+        "key": "D",
+        "text": "母公司对外销售"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "对外交易不属于集团内部抵销事项。"
+  },
+  {
+    "id": "q0873",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "判断投资方是否控制被投资方需考虑：",
+    "options": [
+      {
+        "key": "A",
+        "text": "对被投资方的权力"
+      },
+      {
+        "key": "B",
+        "text": "享有可变回报"
+      },
+      {
+        "key": "C",
+        "text": "有能力运用权力影响回报"
+      },
+      {
+        "key": "D",
+        "text": "持股比例必须超过50%"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "控制取决于实质，不以绝对持股比例为唯一标准。"
+  },
+  {
+    "id": "q0874",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "共同安排按参与方享有的权利和承担的义务分类为：",
+    "options": [
+      {
+        "key": "A",
+        "text": "共同经营"
+      },
+      {
+        "key": "B",
+        "text": "合营企业"
+      },
+      {
+        "key": "C",
+        "text": "联营企业"
+      },
+      {
+        "key": "D",
+        "text": "子公司"
+      }
+    ],
+    "answer": "AB",
+    "explanation": "共同安排只有共同经营和合营企业两类。"
+  },
+  {
+    "id": "q0875",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "采用权益法核算时，投资方可能调整长期股权投资账面价值的事项有：",
+    "options": [
+      {
+        "key": "A",
+        "text": "被投资单位实现净利润"
+      },
+      {
+        "key": "B",
+        "text": "被投资单位宣告现金股利"
+      },
+      {
+        "key": "C",
+        "text": "被投资单位其他综合收益变动"
+      },
+      {
+        "key": "D",
+        "text": "被投资单位除净损益等外权益变动"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "不同事项对应投资收益、冲减投资、其他综合收益或资本公积。"
+  },
+  {
+    "id": "q0876",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "投资性房地产的范围通常包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "已出租土地使用权"
+      },
+      {
+        "key": "B",
+        "text": "持有并准备增值后转让的土地使用权"
+      },
+      {
+        "key": "C",
+        "text": "已出租建筑物"
+      },
+      {
+        "key": "D",
+        "text": "作为存货的房地产"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "房地产开发企业的商品房属于存货。"
+  },
+  {
+    "id": "q0877",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "划分为持有待售类别通常需满足：",
+    "options": [
+      {
+        "key": "A",
+        "text": "可立即出售"
+      },
+      {
+        "key": "B",
+        "text": "出售极可能发生"
+      },
+      {
+        "key": "C",
+        "text": "已作出出售决议并取得确定购买承诺等"
+      },
+      {
+        "key": "D",
+        "text": "预计一年内完成出售"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "准则对可立即出售和出售极可能发生均有具体要求。"
+  },
+  {
+    "id": "q0878",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "金融负债与权益工具区分时，应考虑：",
+    "options": [
+      {
+        "key": "A",
+        "text": "是否存在交付现金或其他金融资产的合同义务"
+      },
+      {
+        "key": "B",
+        "text": "是否以固定数量自身权益工具换固定金额现金结算"
+      },
+      {
+        "key": "C",
+        "text": "合同法律名称"
+      },
+      {
+        "key": "D",
+        "text": "或有结算条款"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "应依据合同实质而非仅看法律名称。"
+  },
+  {
+    "id": "q0879",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "公允价值第一层次输入值应当是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "活跃市场报价"
+      },
+      {
+        "key": "B",
+        "text": "相同资产或负债报价"
+      },
+      {
+        "key": "C",
+        "text": "计量日可取得且未经调整"
+      },
+      {
+        "key": "D",
+        "text": "内部现金流预测"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "内部不可观察预测属于第三层次输入值。"
+  },
+  {
+    "id": "q0880",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "二、CAS综合多选题（25题）",
+    "type": "multiple",
+    "stem": "递延所得税通常不确认的特殊情形可能包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "商誉初始确认形成的应纳税暂时性差异"
+      },
+      {
+        "key": "B",
+        "text": "符合特定条件的资产负债初始确认差异"
+      },
+      {
+        "key": "C",
+        "text": "与子公司投资相关且可控制转回并很可能不转回的应纳税差异"
+      },
+      {
+        "key": "D",
+        "text": "固定资产折旧形成的一切差异"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "普通折旧差异通常需确认递延所得税。"
+  },
+  {
+    "id": "q0881",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "商品流通企业采购过程中发生的运输费一律计入销售费用。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "使存货达到目前场所和状态的合理运输费通常计入存货成本。"
+  },
+  {
+    "id": "q0882",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "已达到预定可使用状态但尚未办理竣工决算的固定资产无需计提折旧。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "应按暂估价值入账并计提折旧，决算后调整原值但通常不追调折旧。"
+  },
+  {
+    "id": "q0883",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "企业出售无形资产的净损益通常计入资产处置损益。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "无形资产处置价款与账面价值及相关税费的差额计入当期损益。"
+  },
+  {
+    "id": "q0884",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "累积带薪缺勤应在职工提供服务从而增加未来带薪缺勤权利时确认负债。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "累积权利可结转至以后期间，应随服务确认。"
+  },
+  {
+    "id": "q0885",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "专门借款在资本化期间的实际利息费用可以不考虑资产支出的实际占用金额。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "专门借款按实际利息减闲置资金收益确定资本化金额。"
+  },
+  {
+    "id": "q0886",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "境外经营财务报表折算差额在处置相关境外经营时可能重分类至当期损益。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "处置境外经营时按准则结转相关其他综合收益。"
+  },
+  {
+    "id": "q0887",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "企业预期将退回客户的款项应确认为退款负债，而非收入。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "附销售退回条款时按预期有权收取的对价确认收入。"
+  },
+  {
+    "id": "q0888",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "客户虽然已接受商品，但企业仍保留商品的法定所有权以保障收款，该保留权通常不妨碍控制权转移。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "仅用于保护应收款的所有权保留不等于保留商品控制权。"
+  },
+  {
+    "id": "q0889",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "合同取得成本无论金额大小均必须确认为资产并逐期摊销。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "摊销期限不超过一年时可采用实务简化计入当期损益。"
+  },
+  {
+    "id": "q0890",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "与日常活动相关的政府补助只能计入其他收益，不能冲减相关成本费用。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "根据经济业务实质可计入其他收益或冲减相关成本费用。"
+  },
+  {
+    "id": "q0891",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "债务人以存货清偿债务时，应将所清偿债务账面价值与存货账面价值差额全部计入主营业务收入。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "相关重组损益通常计入投资收益，存货不按普通销售确认收入。"
+  },
+  {
+    "id": "q0892",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "非货币性资产交换中涉及少量货币性资产，不影响其属于非货币性资产交换的判断。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "应结合补价占比等判断，货币性资产比例重大时不属于该准则范围。"
+  },
+  {
+    "id": "q0893",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "企业确认预计负债后，可以用预期从第三方获得的补偿直接抵减预计负债金额。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "补偿基本确定收到时单独确认为资产，不能直接抵减预计负债。"
+  },
+  {
+    "id": "q0894",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "资产负债表日后董事会提出的利润分配方案中的现金股利应调整报告期末负债。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "报告期末尚无现时义务，属于非调整事项并按要求披露。"
+  },
+  {
+    "id": "q0895",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "关联方交易只要定价与市场一致，就可以不披露关联方关系和交易。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "关联方披露要求不因定价公允而免除。"
+  },
+  {
+    "id": "q0896",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "可报告分部对外收入合计达到企业收入75%以前，企业应增加可报告分部。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "需达到至少75%的外部收入覆盖率。"
+  },
+  {
+    "id": "q0897",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "现金流量表中的现金包括企业可随时用于支付的银行存款。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "不能随时支取的定期存款通常不属于现金。"
+  },
+  {
+    "id": "q0898",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "稀释性潜在普通股只会提高每股收益。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "稀释性潜在普通股会减少持续经营每股收益或增加每股亏损。"
+  },
+  {
+    "id": "q0899",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "母公司丧失对子公司控制权后，剩余股权应按丧失控制权日公允价值重新计量。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "差额及相关其他综合收益按准则计入处置损益或留存收益。"
+  },
+  {
+    "id": "q0900",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "母公司在不丧失控制权情况下处置部分子公司股权，合并报表中应作为权益性交易处理。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "不确认投资收益，差额调整资本公积等权益项目。"
+  },
+  {
+    "id": "q0901",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "合营企业参与方对合营企业投资通常采用权益法核算。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "除符合持有待售等特殊规定外采用权益法。"
+  },
+  {
+    "id": "q0902",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "公允价值模式计量的投资性房地产可以随意转回成本模式。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "已采用公允价值模式后不得转为成本模式。"
+  },
+  {
+    "id": "q0903",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "持有待售非流动资产划分后仍应继续计提折旧或摊销。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "划分为持有待售后停止折旧或摊销。"
+  },
+  {
+    "id": "q0904",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "企业管理金融资产的业务模式发生改变时，重分类应采用追溯调整法。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "自重分类日起采用未来适用法，不追溯调整以前确认的利得损失或利息。"
+  },
+  {
+    "id": "q0905",
+    "sourceFile": "09_机考增量_CAS综合辨析100题.md",
+    "category": "laws",
+    "tags": [
+      "laws"
+    ],
+    "categoryTitle": "行业重要法规与准则",
+    "section": "三、CAS综合判断题（25题）",
+    "type": "judge",
+    "stem": "公允价值计量的目标是估计计量日市场参与者有序交易中的退出价格。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "公允价值是市场参与者视角的退出价格。"
   }
 ];
 window.QUESTION_BANK_STATS = {
-  "total": 705,
+  "total": 905,
   "byType": {
-    "single": 400,
-    "multiple": 150,
-    "judge": 155
+    "single": 501,
+    "multiple": 201,
+    "judge": 203
   },
   "byCategory": {
-    "laws": 600,
-    "policy": 10,
-    "ethics": 95
+    "laws": 770,
+    "policy": 25,
+    "ethics": 110
   }
 };

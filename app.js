@@ -1,7 +1,7 @@
 const STORAGE_KEY = "daqh_quiz_progress_v1";
 const CLIENT_ID_KEY = "daqh_quiz_client_id_v1";
 const SYNC_TABLE = "quiz_sync_states";
-const APP_VERSION = "20260711-progress-cache-v2";
+const APP_VERSION = "20260711-question-bank-905";
 
 const CATEGORIES = [
   { id: "all", title: "全部试题", className: "card-all" },
