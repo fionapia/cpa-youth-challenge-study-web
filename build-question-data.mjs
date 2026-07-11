@@ -6,6 +6,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
 const questionDir = path.join(rootDir, "练习题库");
 const outputFile = path.join(__dirname, "questions-data.js");
+const LEGACY_QUESTION_COUNT = 705;
+const REVISED_QUESTION_PREFIX = "q2";
 
 const CATEGORY_RULES = [
   {
@@ -267,15 +269,68 @@ function parseFile(file) {
   return questions;
 }
 
+function rebalanceOptions(question, counters) {
+  if (!['single', 'multiple'].includes(question.type) || question.options.length !== 4) {
+    return question;
+  }
+
+  const letters = ['A', 'B', 'C', 'D'];
+  const correctKeys = new Set(question.answer.split(''));
+  const correctOptions = question.options.filter((option) => correctKeys.has(option.key));
+  const incorrectOptions = question.options.filter((option) => !correctKeys.has(option.key));
+  let desiredAnswer;
+
+  if (question.type === 'single') {
+    desiredAnswer = letters[counters.single % letters.length];
+    counters.single += 1;
+  } else {
+    const patterns = {
+      2: ['AB', 'AC', 'AD', 'BC', 'BD', 'CD'],
+      3: ['ABC', 'ABD', 'ACD', 'BCD'],
+      4: ['ABCD'],
+    };
+    const choices = patterns[correctOptions.length];
+    if (!choices) return question;
+    const patternIndex = counters.multiple[correctOptions.length] % choices.length;
+    desiredAnswer = choices[patternIndex];
+    counters.multiple[correctOptions.length] += 1;
+  }
+
+  const desiredIndexes = new Set(desiredAnswer.split('').map((letter) => letters.indexOf(letter)));
+  const ordered = [];
+  let correctIndex = 0;
+  let incorrectIndex = 0;
+  for (let index = 0; index < letters.length; index += 1) {
+    ordered.push(desiredIndexes.has(index)
+      ? correctOptions[correctIndex++]
+      : incorrectOptions[incorrectIndex++]);
+  }
+
+  return {
+    ...question,
+    options: ordered.map((option, index) => ({ key: letters[index], text: option.text })),
+    answer: desiredAnswer,
+  };
+}
+
 const files = fs
   .readdirSync(questionDir)
   .filter((file) => file.endsWith(".md"))
   .sort((a, b) => a.localeCompare(b, "zh-Hans-CN"));
 
-const questions = files.flatMap(parseFile).map((question, index) => ({
-  ...question,
-  id: `q${String(index + 1).padStart(4, "0")}`,
-}));
+const parsedQuestions = files.flatMap(parseFile);
+const optionCounters = { single: 0, multiple: { 2: 0, 3: 0, 4: 0 } };
+const questions = parsedQuestions.map((question, index) => {
+  if (index < LEGACY_QUESTION_COUNT) {
+    return { ...question, id: `q${String(index + 1).padStart(4, "0")}` };
+  }
+
+  const revised = rebalanceOptions(question, optionCounters);
+  return {
+    ...revised,
+    id: `${REVISED_QUESTION_PREFIX}-${String(index - LEGACY_QUESTION_COUNT + 1).padStart(4, "0")}`,
+  };
+});
 
 const stats = questions.reduce(
   (acc, question) => {
