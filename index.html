@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>DAQH 刷题库</title>
-    <link rel="stylesheet" href="./styles.css?v=20260715-prediction-calc-965" />
+    <link rel="stylesheet" href="./styles.css?v=20260715-interview-10-965" />
   </head>
   <body>
     <header class="topbar">
@@ -18,6 +18,7 @@
       <nav class="nav" aria-label="主导航">
         <button class="nav-item active" data-view="home">首页</button>
         <button class="nav-item" data-view="practice">刷题</button>
+        <button class="nav-item" data-view="interview">面试模拟</button>
         <button class="nav-item" data-view="mistakes">错题本</button>
         <button class="nav-item" data-view="records">答题记录</button>
       </nav>
@@ -130,6 +131,27 @@
         </div>
       </section>
 
+      <section class="view" id="view-interview">
+        <div class="page-title">
+          <div>
+            <h1>面试模拟 <span id="interview-summary">已练 0 / 10 套</span></h1>
+            <p>建议审题10分钟、口述5分钟；页面不强制计时，可按自己的节奏练习。</p>
+          </div>
+        </div>
+        <div class="interview-layout">
+          <aside class="interview-sidebar">
+            <h2>选择材料</h2>
+            <div class="interview-case-list" id="interview-case-list"></div>
+          </aside>
+          <section class="interview-workspace" id="interview-workspace">
+            <div class="empty-state">
+              <h2>选择一套材料开始模拟</h2>
+              <p>先独立计算并组织答案，完成口述后再查看参考解析。</p>
+            </div>
+          </section>
+        </div>
+      </section>
+
       <section class="view" id="view-mistakes">
         <div class="page-title">
           <div>
@@ -153,9 +175,10 @@
       </section>
     </main>
 
-    <script src="./questions-data.js?v=20260715-prediction-calc-965"></script>
+    <script src="./questions-data.js?v=20260715-interview-10-965"></script>
+    <script src="./interview-data.js?v=20260715-interview-10-965"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="./sync-config.js?v=20260715-prediction-calc-965"></script>
-    <script src="./app.js?v=20260715-prediction-calc-965"></script>
+    <script src="./sync-config.js?v=20260715-interview-10-965"></script>
+    <script src="./app.js?v=20260715-interview-10-965"></script>
   </body>
 </html>

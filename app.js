@@ -1,7 +1,7 @@
 const STORAGE_KEY = "daqh_quiz_progress_v1";
 const CLIENT_ID_KEY = "daqh_quiz_client_id_v1";
 const SYNC_TABLE = "quiz_sync_states";
-const APP_VERSION = "20260715-prediction-calc-965";
+const APP_VERSION = "20260715-interview-10-965";
 
 const CATEGORIES = [
   { id: "all", title: "全部试题", className: "card-all" },
@@ -19,6 +19,7 @@ const TYPE_LABELS = {
 };
 
 const questions = Array.isArray(window.QUESTION_BANK) ? window.QUESTION_BANK : [];
+const interviewCases = Array.isArray(window.INTERVIEW_CASES) ? window.INTERVIEW_CASES : [];
 
 let state = loadState();
 let sessionQuestions = [];
@@ -29,6 +30,9 @@ let mistakeQuestions = [];
 let mistakeIndex = 0;
 let mistakeSelectedAnswers = new Set();
 let mistakeSubmitted = false;
+let currentInterviewId = null;
+let interviewStage = "ready";
+let interviewNoteTimer = null;
 const noteSaveTimers = new Map();
 const NOTE_SAVE_DELAY = 400;
 let supabaseClient = null;
@@ -58,6 +62,7 @@ function getEmptyState() {
     records: [],
     questionProgress: {},
     notes: {},
+    interviewProgress: {},
     meta: {
       updatedAt: null,
       resetAt: null,
@@ -79,6 +84,7 @@ function normalizeState(nextState) {
     ? nextState.records.map((record) => normalizeRecord(record, clientId)).filter(Boolean)
     : empty.records;
   const questionProgress = normalizeQuestionProgress(nextState.questionProgress, records);
+  const interviewProgress = normalizeInterviewProgress(nextState.interviewProgress, meta.updatedAt);
 
   const normalized = {
     total: Number.isFinite(Number(nextState.total)) ? Number(nextState.total) : empty.total,
@@ -90,6 +96,7 @@ function normalizeState(nextState) {
     records,
     questionProgress,
     notes: isPlainObject(nextState.notes) ? nextState.notes : empty.notes,
+    interviewProgress,
     meta,
   };
   normalizeMistakeTimes(normalized);
@@ -152,6 +159,29 @@ function normalizeTimestampMap(value) {
   );
 }
 
+function normalizeInterviewProgress(value, fallbackUpdatedAt) {
+  if (!isPlainObject(value)) return {};
+  const allowedStatuses = new Set(["review", "basic", "mastered"]);
+  const normalized = {};
+
+  Object.entries(value).forEach(([caseId, progress]) => {
+    if (!isPlainObject(progress)) return;
+    const updatedAt = normalizeIso(progress.updatedAt)
+      || normalizeIso(progress.lastPracticedAt)
+      || normalizeIso(fallbackUpdatedAt);
+    if (!updatedAt) return;
+    normalized[caseId] = {
+      status: allowedStatuses.has(progress.status) ? progress.status : null,
+      note: typeof progress.note === "string" ? progress.note : "",
+      attempts: toNonNegativeInt(progress.attempts),
+      lastPracticedAt: normalizeIso(progress.lastPracticedAt),
+      updatedAt,
+    };
+  });
+
+  return normalized;
+}
+
 function normalizeStatsByClient(statsByClient, clientId, sourceState) {
   const stats = {};
   if (isPlainObject(statsByClient)) {
@@ -205,6 +235,12 @@ function inferStateUpdatedAt(sourceState) {
   if (isPlainObject(sourceState.notes)) {
     Object.values(sourceState.notes).forEach((note) => {
       const time = normalizeIso(note?.updatedAt);
+      if (time) times.push(time);
+    });
+  }
+  if (isPlainObject(sourceState.interviewProgress)) {
+    Object.values(sourceState.interviewProgress).forEach((progress) => {
+      const time = normalizeIso(progress?.updatedAt) || normalizeIso(progress?.lastPracticedAt);
       if (time) times.push(time);
     });
   }
@@ -413,11 +449,12 @@ function showView(viewName) {
   });
   if (viewName === "mistakes") renderMistakes();
   if (viewName === "records") renderRecords();
+  if (viewName === "interview") renderInterview();
 }
 
 function renderCategories() {
   const grid = byId("category-grid");
-  grid.innerHTML = CATEGORIES.map((category) => {
+  const questionCards = CATEGORIES.map((category) => {
     const count = getCategoryCount(category.id);
     const progress = getProgressSummary(
       questions.filter((question) => category.id === "all" || questionMatchesCategory(question, category.id))
@@ -430,8 +467,17 @@ function renderCategories() {
       </button>
     `;
   }).join("");
+  const practiced = getInterviewPracticedCount();
+  const interviewCard = `
+    <button class="category-card card-interview" data-interview-entry>
+      <strong>面试模拟</strong>
+      <span>开始模拟</span>
+      <small>已练 ${practiced} / ${interviewCases.length} 套</small>
+    </button>
+  `;
+  grid.innerHTML = questionCards + interviewCard;
 
-  grid.querySelectorAll(".category-card").forEach((card) => {
+  grid.querySelectorAll(".category-card[data-category]").forEach((card) => {
     card.addEventListener("click", () => {
       byId("category-select").value = card.dataset.category;
       byId("type-select").value = "all";
@@ -440,6 +486,325 @@ function renderCategories() {
       showView("practice");
     });
   });
+  grid.querySelector("[data-interview-entry]")?.addEventListener("click", () => showView("interview"));
+}
+
+function getInterviewPracticedCount() {
+  return interviewCases.filter((item) => toNonNegativeInt(state.interviewProgress?.[item.id]?.attempts) > 0).length;
+}
+
+function getInterviewStatusLabel(caseId) {
+  const progress = state.interviewProgress?.[caseId];
+  if (!progress?.attempts) return "未练";
+  return {
+    review: "需复习",
+    basic: "基本掌握",
+    mastered: "熟练",
+  }[progress.status] || "已练";
+}
+
+function getCurrentInterviewCase() {
+  return interviewCases.find((item) => item.id === currentInterviewId) || null;
+}
+
+function renderInterview() {
+  const list = byId("interview-case-list");
+  const summary = byId("interview-summary");
+  if (!list || !summary) return;
+
+  summary.textContent = `已练 ${getInterviewPracticedCount()} / ${interviewCases.length} 套`;
+  list.innerHTML = interviewCases.map((item, index) => `
+    <button class="interview-case-item ${item.id === currentInterviewId ? "active" : ""}" data-interview-case-id="${escapeHtml(item.id)}">
+      <strong>${String(index + 1).padStart(2, "0")} · ${escapeHtml(item.title)}</strong>
+      <span>${escapeHtml(item.topic)} · ${getInterviewStatusLabel(item.id)}</span>
+    </button>
+  `).join("");
+
+  list.querySelectorAll("[data-interview-case-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      currentInterviewId = button.dataset.interviewCaseId;
+      interviewStage = "ready";
+      clearInterviewNoteTimer();
+      renderInterview();
+    });
+  });
+
+  renderInterviewWorkspace();
+}
+
+function renderInterviewWorkspace() {
+  const workspace = byId("interview-workspace");
+  const item = getCurrentInterviewCase();
+  if (!workspace) return;
+  if (!item) {
+    workspace.innerHTML = `
+      <div class="empty-state">
+        <h2>选择一套材料开始模拟</h2>
+        <p>先独立计算并组织答案，完成口述后再查看参考解析。</p>
+      </div>
+    `;
+    return;
+  }
+
+  if (interviewStage === "ready") {
+    const progress = state.interviewProgress?.[item.id];
+    workspace.innerHTML = `
+      <div class="interview-ready">
+        <div class="question-meta">
+          <span class="badge">${escapeHtml(item.topic)}</span>
+          <span class="badge">3个问题</span>
+          <span class="badge">${item.calculations.length}项计算</span>
+        </div>
+        <h2>${escapeHtml(item.title)}</h2>
+        <p>点击开始后显示完整材料。建议使用草稿纸完成计算并列出口述结构，参考答案在完成模拟前不会显示。</p>
+        ${progress?.attempts ? `<p class="interview-history">已练 ${progress.attempts} 次 · 当前自评：${getInterviewStatusLabel(item.id)}</p>` : ""}
+        <button class="primary-btn" data-interview-action="start">开始审题</button>
+      </div>
+    `;
+    bindInterviewWorkspaceEvents();
+    return;
+  }
+
+  const phase = interviewStage === "prep" ? "审题阶段" : interviewStage === "answer" ? "作答阶段" : "复盘阶段";
+  const phaseHint = interviewStage === "prep"
+    ? "建议10分钟：计算关键金额，并把答案整理成“结论、依据、措施”。"
+    : interviewStage === "answer"
+      ? "建议5分钟：完整口述，不需要在网页输入答案。"
+      : "对照计算过程和评分点复盘，再完成自评和选填笔记。";
+
+  workspace.innerHTML = `
+    <div class="interview-phase-head">
+      <div>
+        <div class="question-meta">
+          <span class="badge phase-badge">${phase}</span>
+          <span class="badge">${escapeHtml(item.topic)}</span>
+        </div>
+        <h2>${escapeHtml(item.title)}</h2>
+        <p>${phaseHint}</p>
+      </div>
+    </div>
+    ${renderInterviewMaterial(item)}
+    ${renderInterviewQuestions(item)}
+    ${interviewStage === "review" ? renderInterviewReference(item) : ""}
+    <div class="interview-actions">
+      ${interviewStage === "prep" ? '<button class="primary-btn" data-interview-action="answer">进入作答</button>' : ""}
+      ${interviewStage === "answer" ? '<button class="primary-btn" data-interview-action="complete">完成并复盘</button>' : ""}
+      ${interviewStage === "review" ? '<button class="ghost-btn" data-interview-action="restart">重新模拟</button>' : ""}
+    </div>
+  `;
+  bindInterviewWorkspaceEvents();
+}
+
+function renderInterviewMaterial(item) {
+  return `
+    <section class="interview-section">
+      <h3>案例材料</h3>
+      <div class="material-grid">
+        ${item.material.map((section) => `
+          <article class="material-block">
+            <h4>${escapeHtml(section.heading)}</h4>
+            <p>${escapeHtml(section.text)}</p>
+          </article>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderInterviewQuestions(item) {
+  return `
+    <section class="interview-section">
+      <h3>面试问题</h3>
+      <ol class="interview-question-list">
+        ${item.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function renderInterviewReference(item) {
+  const progress = state.interviewProgress?.[item.id] || {};
+  return `
+    <section class="interview-reference">
+      <h3>参考解析</h3>
+      <div class="calculation-grid">
+        ${item.calculations.map((calculation) => `
+          <article class="calculation-block">
+            <h4>${escapeHtml(calculation.label)}</h4>
+            <ol>${calculation.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>
+            <strong>${escapeHtml(calculation.result)}</strong>
+          </article>
+        `).join("")}
+      </div>
+      ${renderReferenceList("专业判断", item.judgments)}
+      ${renderReferenceList("审计应对", item.responses)}
+      ${renderReferenceList("5分钟答题提纲", item.answerOutline, true)}
+      <div class="training-score">
+        <div class="training-score-head">
+          <h4>训练评分点</h4>
+          <span>仅用于自我复盘，非官方评分标准</span>
+        </div>
+        <div class="score-grid">
+          ${item.scoringPoints.map((point) => `<span>${escapeHtml(point.label)} <strong>${point.points}分</strong></span>`).join("")}
+        </div>
+      </div>
+      <div class="related-practice">
+        <h4>关联客观题</h4>
+        <div class="related-actions">
+          ${item.relatedQuestionIds.map((questionId, index) => `<button class="ghost-btn" data-related-question-id="${escapeHtml(questionId)}">练习关联题 ${index + 1}</button>`).join("")}
+        </div>
+      </div>
+      <div class="interview-review-box">
+        <h4>本次自评</h4>
+        <div class="rating-actions">
+          ${[
+            ["review", "需复习"],
+            ["basic", "基本掌握"],
+            ["mastered", "熟练"],
+          ].map(([value, label]) => `<button class="rating-btn ${progress.status === value ? "active" : ""}" data-interview-rating="${value}">${label}</button>`).join("")}
+        </div>
+        <label class="interview-note-label" for="interview-note-${escapeHtml(item.id)}">复盘笔记（选填）</label>
+        <textarea id="interview-note-${escapeHtml(item.id)}" data-interview-note placeholder="记录遗漏的计算步骤、准则依据或表达问题">${escapeHtml(progress.note || "")}</textarea>
+        <span class="note-status" data-interview-note-status>自动保存到本地，开启同步后可跨设备查看</span>
+      </div>
+    </section>
+  `;
+}
+
+function renderReferenceList(title, items, ordered = false) {
+  const tag = ordered ? "ol" : "ul";
+  return `
+    <div class="reference-list">
+      <h4>${escapeHtml(title)}</h4>
+      <${tag}>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</${tag}>
+    </div>
+  `;
+}
+
+function bindInterviewWorkspaceEvents() {
+  const workspace = byId("interview-workspace");
+  if (!workspace) return;
+  workspace.querySelector('[data-interview-action="start"]')?.addEventListener("click", () => {
+    interviewStage = "prep";
+    renderInterviewWorkspace();
+  });
+  workspace.querySelector('[data-interview-action="answer"]')?.addEventListener("click", () => {
+    interviewStage = "answer";
+    renderInterviewWorkspace();
+  });
+  workspace.querySelector('[data-interview-action="complete"]')?.addEventListener("click", completeInterviewCase);
+  workspace.querySelector('[data-interview-action="restart"]')?.addEventListener("click", () => {
+    flushInterviewNote();
+    interviewStage = "prep";
+    renderInterviewWorkspace();
+  });
+  workspace.querySelectorAll("[data-interview-rating]").forEach((button) => {
+    button.addEventListener("click", () => saveInterviewRating(button.dataset.interviewRating));
+  });
+  workspace.querySelectorAll("[data-related-question-id]").forEach((button) => {
+    button.addEventListener("click", () => openRelatedQuestion(button.dataset.relatedQuestionId));
+  });
+  const note = workspace.querySelector("[data-interview-note]");
+  note?.addEventListener("input", () => scheduleInterviewNoteSave(note));
+}
+
+function completeInterviewCase() {
+  const item = getCurrentInterviewCase();
+  if (!item) return;
+  const now = new Date().toISOString();
+  const current = state.interviewProgress[item.id] || {};
+  state.interviewProgress[item.id] = {
+    status: current.status || null,
+    note: current.note || "",
+    attempts: toNonNegativeInt(current.attempts) + 1,
+    lastPracticedAt: now,
+    updatedAt: now,
+  };
+  interviewStage = "review";
+  saveState();
+  renderCategories();
+  renderInterview();
+}
+
+function saveInterviewRating(status) {
+  const item = getCurrentInterviewCase();
+  if (!item || !["review", "basic", "mastered"].includes(status)) return;
+  const now = new Date().toISOString();
+  const current = state.interviewProgress[item.id] || {};
+  const note = byId("interview-workspace")?.querySelector("[data-interview-note]")?.value ?? current.note ?? "";
+  clearInterviewNoteTimer();
+  state.interviewProgress[item.id] = {
+    status,
+    note,
+    attempts: Math.max(1, toNonNegativeInt(current.attempts)),
+    lastPracticedAt: current.lastPracticedAt || now,
+    updatedAt: now,
+  };
+  saveState();
+  renderCategories();
+  renderInterview();
+}
+
+function scheduleInterviewNoteSave(textarea) {
+  clearInterviewNoteTimer();
+  const status = byId("interview-workspace")?.querySelector("[data-interview-note-status]");
+  if (status) status.textContent = "正在自动保存...";
+  interviewNoteTimer = setTimeout(() => {
+    const item = getCurrentInterviewCase();
+    if (!item) return;
+    const now = new Date().toISOString();
+    const current = state.interviewProgress[item.id] || {};
+    state.interviewProgress[item.id] = {
+      status: current.status || null,
+      note: textarea.value,
+      attempts: Math.max(1, toNonNegativeInt(current.attempts)),
+      lastPracticedAt: current.lastPracticedAt || now,
+      updatedAt: now,
+    };
+    saveState();
+    if (status) status.textContent = "已自动保存";
+    interviewNoteTimer = null;
+  }, NOTE_SAVE_DELAY);
+}
+
+function clearInterviewNoteTimer() {
+  if (!interviewNoteTimer) return;
+  clearTimeout(interviewNoteTimer);
+  interviewNoteTimer = null;
+}
+
+function flushInterviewNote() {
+  const item = getCurrentInterviewCase();
+  const textarea = byId("interview-workspace")?.querySelector("[data-interview-note]");
+  if (!item || !textarea) return;
+  const current = state.interviewProgress[item.id] || {};
+  const note = textarea.value;
+  if (note === (current.note || "")) {
+    clearInterviewNoteTimer();
+    return;
+  }
+  const now = new Date().toISOString();
+  clearInterviewNoteTimer();
+  state.interviewProgress[item.id] = {
+    status: current.status || null,
+    note,
+    attempts: Math.max(1, toNonNegativeInt(current.attempts)),
+    lastPracticedAt: current.lastPracticedAt || now,
+    updatedAt: now,
+  };
+  saveState();
+}
+
+function openRelatedQuestion(questionId) {
+  flushInterviewNote();
+  const question = getQuestionById(questionId);
+  if (!question) return;
+  sessionQuestions = [question];
+  currentIndex = 0;
+  resetAnswerState();
+  if (byId("category-select")) byId("category-select").value = "prediction";
+  renderQuestion();
+  showView("practice");
 }
 
 function renderSelectors() {
@@ -928,6 +1293,7 @@ function clearMistakes() {
 
 function resetProgress() {
   clearNoteSaveTimers();
+  clearInterviewNoteTimer();
   const clientId = state.clientId;
   const resetAt = new Date().toISOString();
   state = getEmptyState();
@@ -935,12 +1301,15 @@ function resetProgress() {
   state.meta.resetAt = resetAt;
   state.meta.updatedAt = resetAt;
   mistakeIndex = 0;
+  currentInterviewId = null;
+  interviewStage = "ready";
   resetMistakeAnswerState();
   saveState();
   updateStats();
   updateProgressDisplays();
   renderRecords();
   renderMistakes();
+  renderInterview();
 }
 
 function getSupabaseConfig() {
@@ -1126,6 +1495,7 @@ function mergeStates(localState, cloudState) {
     questionProgress: mergeQuestionProgress(local.questionProgress, cloud.questionProgress, latestResetAt),
     mistakes: mergeMistakes(local.mistakes, cloud.mistakes, mergedMeta, latestResetAt),
     notes: mergeNotes(local.notes, cloud.notes, mergedMeta, latestResetAt),
+    interviewProgress: mergeInterviewProgress(local.interviewProgress, cloud.interviewProgress, latestResetAt),
   };
 
   merged.meta.updatedAt = maxIso(local.meta.updatedAt, cloud.meta.updatedAt, new Date().toISOString());
@@ -1212,11 +1582,26 @@ function mergeNotes(localNotes, cloudNotes, mergedMeta, latestResetAt) {
   return merged;
 }
 
+function mergeInterviewProgress(localProgress, cloudProgress, latestResetAt) {
+  const merged = {};
+  [localProgress, cloudProgress].forEach((source) => {
+    Object.entries(source || {}).forEach(([caseId, progress]) => {
+      if (latestResetAt && !isAfter(progress.updatedAt, latestResetAt)) return;
+      const current = merged[caseId];
+      if (!current || isAfter(progress.updatedAt, current.updatedAt)) {
+        merged[caseId] = { ...progress };
+      }
+    });
+  });
+  return merged;
+}
+
 function refreshCurrentView() {
   updateStats();
   updateProgressDisplays();
   if (document.getElementById("view-mistakes")?.classList.contains("active")) renderMistakes();
   if (document.getElementById("view-records")?.classList.contains("active")) renderRecords();
+  if (document.getElementById("view-interview")?.classList.contains("active")) renderInterview();
   document.querySelectorAll("[data-note-question-id]").forEach((textarea) => {
     const text = getNoteText(textarea.dataset.noteQuestionId);
     if (textarea.value !== text) textarea.value = text;
