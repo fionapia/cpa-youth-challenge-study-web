@@ -26196,18 +26196,1149 @@ window.QUESTION_BANK = [
     "options": [],
     "answer": "正确",
     "explanation": "经济依赖和密切商业关系均可能损害独立性。"
+  },
+  {
+    "id": "q2-0201",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "一、政策与行业治理预测单选题（5题）",
+    "type": "single",
+    "stem": "某单位选聘会计师事务所时，将报价最低作为唯一评分标准。最符合行业政策导向的评价是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "有利于充分竞争，应当鼓励"
+      },
+      {
+        "key": "B",
+        "text": "可能诱发低价恶性竞争，应建立以审计质量为核心的综合评价机制"
+      },
+      {
+        "key": "C",
+        "text": "只要股东大会通过就不存在问题"
+      },
+      {
+        "key": "D",
+        "text": "仅需在审计报告中披露"
+      }
+    ],
+    "answer": "B",
+    "explanation": "审计服务选聘不能以低价作为唯一标准，应综合评价质量、胜任能力和资源投入。"
+  },
+  {
+    "id": "q2-0202",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "一、政策与行业治理预测单选题（5题）",
+    "type": "single",
+    "stem": "在财会监督体系中，会计师事务所最直接的职责定位是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "代替财政部门实施行政处罚"
+      },
+      {
+        "key": "B",
+        "text": "代替单位管理层编制财务报表"
+      },
+      {
+        "key": "C",
+        "text": "依法履行中介机构执业监督职责并发挥审计鉴证作用"
+      },
+      {
+        "key": "D",
+        "text": "决定企业经营战略"
+      }
+    ],
+    "answer": "C",
+    "explanation": "中介机构通过独立、客观的审计鉴证发挥监督作用，但不替代政府和管理层职责。"
+  },
+  {
+    "id": "q2-0203",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "一、政策与行业治理预测单选题（5题）",
+    "type": "single",
+    "stem": "对同一违法审计项目同时追究事务所和签字注册会计师责任，体现的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "审计抽样"
+      },
+      {
+        "key": "B",
+        "text": "轮换制度"
+      },
+      {
+        "key": "C",
+        "text": "单一监管"
+      },
+      {
+        "key": "D",
+        "text": "一案双罚"
+      }
+    ],
+    "answer": "D",
+    "explanation": "一案双罚强调压实机构和相关个人责任。"
+  },
+  {
+    "id": "q2-0204",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "一、政策与行业治理预测单选题（5题）",
+    "type": "single",
+    "stem": "行业诚信档案最合理的用途是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "为信用评价、分级分类监管和选聘提供依据"
+      },
+      {
+        "key": "B",
+        "text": "仅作内部存档且不得使用"
+      },
+      {
+        "key": "C",
+        "text": "替代执业质量检查"
+      },
+      {
+        "key": "D",
+        "text": "只记录行政奖励"
+      }
+    ],
+    "answer": "A",
+    "explanation": "诚信档案应完整记录守信与失信信息，并与监管和市场选择衔接。"
+  },
+  {
+    "id": "q2-0205",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "一、政策与行业治理预测单选题（5题）",
+    "type": "single",
+    "stem": "建设注册会计师行业统一监管平台的主要价值是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "统一事务所收费"
+      },
+      {
+        "key": "B",
+        "text": "促进信息归集、风险预警和跨部门监管协同"
+      },
+      {
+        "key": "C",
+        "text": "代替注册会计师作出审计判断"
+      },
+      {
+        "key": "D",
+        "text": "公开全部客户商业秘密"
+      }
+    ],
+    "answer": "B",
+    "explanation": "数字化监管平台有助于打通信息、识别风险并提升监管协同效率。"
+  },
+  {
+    "id": "q2-0206",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "二、审计质量与舞弊预测单选题（6题）",
+    "type": "single",
+    "stem": "无论对管理层诚信评价如何，注册会计师通常都应将下列事项视为舞弊导致的重大错报风险：",
+    "options": [
+      {
+        "key": "A",
+        "text": "所有固定资产折旧"
+      },
+      {
+        "key": "B",
+        "text": "所有银行存款余额"
+      },
+      {
+        "key": "C",
+        "text": "管理层凌驾于控制之上"
+      },
+      {
+        "key": "D",
+        "text": "全部关联方交易"
+      }
+    ],
+    "answer": "C",
+    "explanation": "管理层凌驾于控制之上的风险在所有被审计单位都存在，通常属于特别风险。"
+  },
+  {
+    "id": "q2-0207",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "二、审计质量与舞弊预测单选题（6题）",
+    "type": "single",
+    "stem": "审计人员发现年末存在大量由高级管理人员手工录入、缺少业务说明的调整分录，最恰当的首要应对是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "因已审批而不再检查"
+      },
+      {
+        "key": "B",
+        "text": "仅扩大函证样本"
+      },
+      {
+        "key": "C",
+        "text": "直接认定财务报表整体虚假"
+      },
+      {
+        "key": "D",
+        "text": "将其作为管理层凌驾控制的迹象，测试分录并了解商业理由"
+      }
+    ],
+    "answer": "D",
+    "explanation": "异常分录是管理层凌驾控制的重要风险信号，应测试分录、会计估计和异常交易。"
+  },
+  {
+    "id": "q2-0208",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "二、审计质量与舞弊预测单选题（6题）",
+    "type": "single",
+    "stem": "被审计单位持续经营存在重大不确定性，管理层已在财务报表中充分披露且持续经营基础适当。注册会计师通常应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "发表无保留意见并设置与持续经营相关的重大不确定性部分"
+      },
+      {
+        "key": "B",
+        "text": "发表否定意见"
+      },
+      {
+        "key": "C",
+        "text": "发表无法表示意见"
+      },
+      {
+        "key": "D",
+        "text": "不在报告中提及"
+      }
+    ],
+    "answer": "A",
+    "explanation": "披露充分时通常不修改意见，但应以单独部分提醒报表使用者。"
+  },
+  {
+    "id": "q2-0209",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "二、审计质量与舞弊预测单选题（6题）",
+    "type": "single",
+    "stem": "关于关键审计事项，下列说法正确的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "可以替代非无保留意见"
+      },
+      {
+        "key": "B",
+        "text": "是从与治理层沟通过且对本期审计最为重要的事项中选取"
+      },
+      {
+        "key": "C",
+        "text": "等同于对单个事项发表意见"
+      },
+      {
+        "key": "D",
+        "text": "必须包括全部重大错报"
+      }
+    ],
+    "answer": "B",
+    "explanation": "关键审计事项不能替代修改意见、持续经营重大不确定性或其他法定报告要求。"
+  },
+  {
+    "id": "q2-0210",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "二、审计质量与舞弊预测单选题（6题）",
+    "type": "single",
+    "stem": "事务所监控发现多个项目重复出现同类缺陷，最符合质量管理准则的处理是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "只批评相关助理人员"
+      },
+      {
+        "key": "B",
+        "text": "删除检查记录"
+      },
+      {
+        "key": "C",
+        "text": "分析根本原因，设计整改措施并评价整改效果"
+      },
+      {
+        "key": "D",
+        "text": "等待监管部门提出要求"
+      }
+    ],
+    "answer": "C",
+    "explanation": "监控和整改应形成识别缺陷、根因分析、实施整改和评价效果的闭环。"
+  },
+  {
+    "id": "q2-0211",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "二、审计质量与舞弊预测单选题（6题）",
+    "type": "single",
+    "stem": "被审计单位人员代注册会计师发出并收回询证函，注册会计师最应关注：",
+    "options": [
+      {
+        "key": "A",
+        "text": "函证纸张格式"
+      },
+      {
+        "key": "B",
+        "text": "客户是否节约邮费"
+      },
+      {
+        "key": "C",
+        "text": "回函数量是否超过去年"
+      },
+      {
+        "key": "D",
+        "text": "是否保持对函证全过程的控制以及回函可靠性"
+      }
+    ],
+    "answer": "D",
+    "explanation": "函证由被审计单位控制会削弱证据可靠性，注册会计师应保持全过程控制。"
+  },
+  {
+    "id": "q2-0212",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "三、职业道德与独立性预测单选题（5题）",
+    "type": "single",
+    "stem": "审计客户长期拖欠审计费，金额已相当于向事务所提供的一笔贷款。最可能产生：",
+    "options": [
+      {
+        "key": "A",
+        "text": "自身利益威胁"
+      },
+      {
+        "key": "B",
+        "text": "过度推介威胁"
+      },
+      {
+        "key": "C",
+        "text": "自我评价威胁"
+      },
+      {
+        "key": "D",
+        "text": "无任何威胁"
+      }
+    ],
+    "answer": "A",
+    "explanation": "长期逾期收费可能形成经济依赖，并被视同贷款性质评价独立性影响。"
+  },
+  {
+    "id": "q2-0213",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "三、职业道德与独立性预测单选题（5题）",
+    "type": "single",
+    "stem": "项目组拟将客户未公开财务数据上传至公共生成式人工智能工具。首先应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "直接上传以提高效率"
+      },
+      {
+        "key": "B",
+        "text": "评估保密、数据安全和授权要求，未经允许不得传输"
+      },
+      {
+        "key": "C",
+        "text": "只删除客户名称即可上传全部数据"
+      },
+      {
+        "key": "D",
+        "text": "由助理人员自行决定"
+      }
+    ],
+    "answer": "B",
+    "explanation": "使用外部AI工具不能削弱保密义务，需遵守客户授权、事务所政策和数据安全规定。"
+  },
+  {
+    "id": "q2-0214",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "三、职业道德与独立性预测单选题（5题）",
+    "type": "single",
+    "stem": "事务所为审计客户提供服务时，以下哪项最明显属于承担管理层职责：",
+    "options": [
+      {
+        "key": "A",
+        "text": "提供会计准则技术建议"
+      },
+      {
+        "key": "B",
+        "text": "对管理层计算进行复核"
+      },
+      {
+        "key": "C",
+        "text": "代表客户批准会计分录并决定财务报表处理"
+      },
+      {
+        "key": "D",
+        "text": "说明可供选择的处理方法"
+      }
+    ],
+    "answer": "C",
+    "explanation": "作出决策、批准交易或控制财务报告属于管理层职责，事务所不得承担。"
+  },
+  {
+    "id": "q2-0215",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "三、职业道德与独立性预测单选题（5题）",
+    "type": "single",
+    "stem": "客户赠送价值不高但明确以“希望审计人员少提问题”为目的的礼品，项目组应：",
+    "options": [
+      {
+        "key": "A",
+        "text": "因金额不大可以接受"
+      },
+      {
+        "key": "B",
+        "text": "接受后转赠同事即可"
+      },
+      {
+        "key": "C",
+        "text": "计入审计收费"
+      },
+      {
+        "key": "D",
+        "text": "重点考虑不当影响意图并拒绝或采取适当行动"
+      }
+    ],
+    "answer": "D",
+    "explanation": "礼品是否可接受不能只看金额；不当影响意图是关键判断因素。"
+  },
+  {
+    "id": "q2-0216",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "三、职业道德与独立性预测单选题（5题）",
+    "type": "single",
+    "stem": "某网络所为审计客户实施对财务报表有重大影响的估值服务，评价独立性时：",
+    "options": [
+      {
+        "key": "A",
+        "text": "应将网络所提供的服务纳入独立性评价"
+      },
+      {
+        "key": "B",
+        "text": "只考虑签约事务所，不考虑网络所"
+      },
+      {
+        "key": "C",
+        "text": "只要不在同一城市就无影响"
+      },
+      {
+        "key": "D",
+        "text": "只需由客户批准"
+      }
+    ],
+    "answer": "A",
+    "explanation": "审计独立性要求通常扩展至网络所，不能通过网络安排规避限制。"
+  },
+  {
+    "id": "q2-0217",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "四、数字化与青年胜任能力预测单选题（4题）",
+    "type": "single",
+    "stem": "注册会计师使用人工智能生成审计程序建议后，正确做法是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "将AI输出直接视为充分审计证据"
+      },
+      {
+        "key": "B",
+        "text": "由具备胜任能力的人员复核其适当性并对最终判断负责"
+      },
+      {
+        "key": "C",
+        "text": "在底稿中只记录工具名称"
+      },
+      {
+        "key": "D",
+        "text": "将审计责任转移给软件供应商"
+      }
+    ],
+    "answer": "B",
+    "explanation": "技术工具可以辅助审计，但不能替代职业判断或转移注册会计师责任。"
+  },
+  {
+    "id": "q2-0218",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "四、数字化与青年胜任能力预测单选题（4题）",
+    "type": "single",
+    "stem": "数据分析覆盖了全部销售交易后，注册会计师应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "认为不存在检查风险"
+      },
+      {
+        "key": "B",
+        "text": "不再需要理解内部控制"
+      },
+      {
+        "key": "C",
+        "text": "评价数据完整性和准确性，并调查识别出的异常"
+      },
+      {
+        "key": "D",
+        "text": "自动发表无保留意见"
+      }
+    ],
+    "answer": "C",
+    "explanation": "全量分析仍依赖数据质量、规则设计和对异常结果的专业判断。"
+  },
+  {
+    "id": "q2-0219",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "四、数字化与青年胜任能力预测单选题（4题）",
+    "type": "single",
+    "stem": "使用客户数据开展数字化审计时，最基本的安全原则是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据越多越好"
+      },
+      {
+        "key": "B",
+        "text": "可无限期保留全部数据"
+      },
+      {
+        "key": "C",
+        "text": "可与其他客户共享模型输入"
+      },
+      {
+        "key": "D",
+        "text": "按授权和最小必要原则访问、使用及保存数据"
+      }
+    ],
+    "answer": "D",
+    "explanation": "数据治理应兼顾授权、最小必要、访问控制、保存期限和保密要求。"
+  },
+  {
+    "id": "q2-0220",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "四、数字化与青年胜任能力预测单选题（4题）",
+    "type": "single",
+    "stem": "青年注册会计师面对新业务和新技术时，最符合行业胜任能力要求的是：",
+    "options": [
+      {
+        "key": "A",
+        "text": "持续学习，并将专业知识、职业道德、沟通和数字能力结合"
+      },
+      {
+        "key": "B",
+        "text": "只依赖既有经验"
+      },
+      {
+        "key": "C",
+        "text": "将判断全部交给专家"
+      },
+      {
+        "key": "D",
+        "text": "只追求报告出具速度"
+      }
+    ],
+    "answer": "A",
+    "explanation": "胜任能力是专业知识、实践判断、职业道德、沟通协作和持续学习的综合体现。"
+  },
+  {
+    "id": "q2-0221",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "五、政策与行业治理预测多选题（2题）",
+    "type": "multiple",
+    "stem": "提升注册会计师行业审计质量的系统措施包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "完善事务所质量管理体系"
+      },
+      {
+        "key": "B",
+        "text": "优化以质量为导向的选聘机制"
+      },
+      {
+        "key": "C",
+        "text": "加强信用监管和跨部门协同"
+      },
+      {
+        "key": "D",
+        "text": "压实事务所与签字人员责任"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "审计质量需要内部治理、市场选聘、行业监管和责任追究共同作用。"
+  },
+  {
+    "id": "q2-0222",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "五、政策与行业治理预测多选题（2题）",
+    "type": "multiple",
+    "stem": "财会监督协同机制强调的贯通协调包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "财政部门与有关部门监督协同"
+      },
+      {
+        "key": "B",
+        "text": "单位内部监督与中介机构执业监督衔接"
+      },
+      {
+        "key": "C",
+        "text": "行业协会自律监督与政府监管配合"
+      },
+      {
+        "key": "D",
+        "text": "将政府监管责任整体转移给会计师事务所"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "新时代财会监督强调横向协同、纵向联动，但各监督主体不能相互替代法定职责。"
+  },
+  {
+    "id": "q2-0223",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "六、审计质量与舞弊预测多选题（3题）",
+    "type": "multiple",
+    "stem": "针对管理层凌驾于控制之上的风险，注册会计师通常应实施：",
+    "options": [
+      {
+        "key": "A",
+        "text": "测试会计分录和其他调整"
+      },
+      {
+        "key": "B",
+        "text": "复核会计估计是否存在管理层偏向"
+      },
+      {
+        "key": "C",
+        "text": "仅依赖管理层书面声明"
+      },
+      {
+        "key": "D",
+        "text": "评价超出正常经营过程的重大交易商业理由"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "书面声明不能替代针对管理层凌驾风险的实质性审计程序。"
+  },
+  {
+    "id": "q2-0224",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "六、审计质量与舞弊预测多选题（3题）",
+    "type": "multiple",
+    "stem": "收入确认可能存在舞弊风险时，注册会计师可重点关注：",
+    "options": [
+      {
+        "key": "A",
+        "text": "期末前后交易截止"
+      },
+      {
+        "key": "B",
+        "text": "异常销售合同及退货条款"
+      },
+      {
+        "key": "C",
+        "text": "手工调整和虚构客户"
+      },
+      {
+        "key": "D",
+        "text": "收款、发货与合同等证据之间的一致性"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "收入舞弊常涉及虚构交易、提前确认、截止错误及隐瞒退货等方式。"
+  },
+  {
+    "id": "q2-0225",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "六、审计质量与舞弊预测多选题（3题）",
+    "type": "multiple",
+    "stem": "事务所质量管理中的根本原因分析应当：",
+    "options": [
+      {
+        "key": "A",
+        "text": "针对识别出的缺陷"
+      },
+      {
+        "key": "B",
+        "text": "以寻找个人替罪者为唯一目标"
+      },
+      {
+        "key": "C",
+        "text": "结合缺陷性质和严重程度确定分析深度"
+      },
+      {
+        "key": "D",
+        "text": "为设计有针对性的整改措施提供依据"
+      }
+    ],
+    "answer": "ACD",
+    "explanation": "根因分析关注导致缺陷的系统性原因，而非简单归责个人。"
+  },
+  {
+    "id": "q2-0226",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "七、职业道德与独立性预测多选题（3题）",
+    "type": "multiple",
+    "stem": "事务所使用外部人工智能工具处理客户信息前，应考虑：",
+    "options": [
+      {
+        "key": "A",
+        "text": "客户保密和授权要求"
+      },
+      {
+        "key": "B",
+        "text": "数据存储地点及访问控制"
+      },
+      {
+        "key": "C",
+        "text": "工具输出可靠性和人工复核"
+      },
+      {
+        "key": "D",
+        "text": "事务所政策及法律法规要求"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "AI使用同时涉及保密、数据治理、技术可靠性和质量管理。"
+  },
+  {
+    "id": "q2-0227",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "七、职业道德与独立性预测多选题（3题）",
+    "type": "multiple",
+    "stem": "面对客户可能违反法律法规的行为，注册会计师可能需要：",
+    "options": [
+      {
+        "key": "A",
+        "text": "不考虑保密和法定程序而立即向社会公开全部信息"
+      },
+      {
+        "key": "B",
+        "text": "了解事项及其背景"
+      },
+      {
+        "key": "C",
+        "text": "与适当层级管理层或治理层沟通"
+      },
+      {
+        "key": "D",
+        "text": "考虑法定外部报告义务"
+      }
+    ],
+    "answer": "BCD",
+    "explanation": "应依据职业道德、审计准则和法律规定分层次应对，不能无依据公开客户信息。"
+  },
+  {
+    "id": "q2-0228",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "七、职业道德与独立性预测多选题（3题）",
+    "type": "multiple",
+    "stem": "可能削弱审计独立性的收费事项包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "对单一客户收费依赖过高"
+      },
+      {
+        "key": "B",
+        "text": "审计费长期逾期"
+      },
+      {
+        "key": "C",
+        "text": "审计业务采用或有收费"
+      },
+      {
+        "key": "D",
+        "text": "正常固定收费且金额不重大"
+      }
+    ],
+    "answer": "ABC",
+    "explanation": "收费依赖、逾期收费和或有收费可能产生自身利益或外在压力威胁。"
+  },
+  {
+    "id": "q2-0229",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "八、数字化与青年胜任能力预测多选题（2题）",
+    "type": "multiple",
+    "stem": "数字化审计环境下，注册会计师仍需保持的核心能力包括：",
+    "options": [
+      {
+        "key": "A",
+        "text": "职业怀疑"
+      },
+      {
+        "key": "B",
+        "text": "数据质量评价"
+      },
+      {
+        "key": "C",
+        "text": "对异常结果的专业判断"
+      },
+      {
+        "key": "D",
+        "text": "沟通和记录审计结论"
+      }
+    ],
+    "answer": "ABCD",
+    "explanation": "技术改变程序执行方式，但不会取代审计基本原则和职业责任。"
+  },
+  {
+    "id": "q2-0230",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "八、数字化与青年胜任能力预测多选题（2题）",
+    "type": "multiple",
+    "stem": "使用自动化工具形成审计证据时，工作底稿应适当记录：",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据来源和完整性评价"
+      },
+      {
+        "key": "B",
+        "text": "工具或规则的用途及关键参数"
+      },
+      {
+        "key": "C",
+        "text": "因工具自动运行而不保留人工复核记录"
+      },
+      {
+        "key": "D",
+        "text": "异常结果及后续处理"
+      }
+    ],
+    "answer": "ABD",
+    "explanation": "记录应使有经验的注册会计师能够了解工具如何支持结论，包括人工复核过程。"
+  },
+  {
+    "id": "q2-0231",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "九、政策与行业治理预测判断题（2题）",
+    "type": "judge",
+    "stem": "以审计质量为导向的选聘机制意味着报价因素在任何情况下都不得纳入评价。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "可以合理考虑价格，但不能以低价作为唯一标准或牺牲必要审计投入。"
+  },
+  {
+    "id": "q2-0232",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "policy"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "九、政策与行业治理预测判断题（2题）",
+    "type": "judge",
+    "stem": "外部监管和行业自律不能替代会计师事务所对执业质量及质量管理体系承担的主体责任。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "事务所始终是其质量管理体系的责任主体。"
+  },
+  {
+    "id": "q2-0233",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十、审计质量与舞弊预测判断题（3题）",
+    "type": "judge",
+    "stem": "数据分析覆盖全部交易后，注册会计师就不再需要评价数据来源的完整性和准确性。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "全量分析结论是否可靠首先取决于数据是否完整、准确和适合审计目的。"
+  },
+  {
+    "id": "q2-0234",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十、审计质量与舞弊预测判断题（3题）",
+    "type": "judge",
+    "stem": "在财务报表披露充分时，与持续经营相关的重大不确定性部分本身不等同于非无保留意见。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "该部分用于突出重大不确定性，是否修改意见取决于持续经营基础和披露是否恰当。"
+  },
+  {
+    "id": "q2-0235",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十、审计质量与舞弊预测判断题（3题）",
+    "type": "judge",
+    "stem": "关键审计事项可以替代注册会计师按照准则应当发表的保留意见。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "关键审计事项不能替代非无保留意见或其他专门报告要求。"
+  },
+  {
+    "id": "q2-0236",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十一、职业道德与独立性预测判断题（3题）",
+    "type": "judge",
+    "stem": "即使审计客户表示同意，会计师事务所仍不得承担该客户的管理层职责。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "客户同意不能改变职责性质或消除相关独立性问题。"
+  },
+  {
+    "id": "q2-0237",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十一、职业道德与独立性预测判断题（3题）",
+    "type": "judge",
+    "stem": "客户信息在上传外部人工智能工具前删除企业名称，就必然不再涉及保密和数据安全风险。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "交易、人员和业务数据仍可能重新识别客户，必须进行完整的数据安全与授权评价。"
+  },
+  {
+    "id": "q2-0238",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction",
+      "ethics"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十一、职业道德与独立性预测判断题（3题）",
+    "type": "judge",
+    "stem": "网络所提供的非鉴证服务可能影响签约事务所对审计客户的独立性。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "独立性评价通常覆盖事务所及其网络所。"
+  },
+  {
+    "id": "q2-0239",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十二、数字化与青年胜任能力预测判断题（2题）",
+    "type": "judge",
+    "stem": "注册会计师使用人工智能工具后，可以将最终审计判断和报告责任转移给工具供应商。",
+    "options": [],
+    "answer": "错误",
+    "explanation": "工具无法承担注册会计师法定和职业责任，最终判断仍由注册会计师作出。"
+  },
+  {
+    "id": "q2-0240",
+    "sourceFile": "10_预测押题_行业胜任能力高频40题.md",
+    "category": "prediction",
+    "tags": [
+      "prediction"
+    ],
+    "categoryTitle": "预测押题",
+    "section": "十二、数字化与青年胜任能力预测判断题（2题）",
+    "type": "judge",
+    "stem": "面对新准则、新业务和新技术，持续职业发展属于保持专业胜任能力的重要要求。",
+    "options": [],
+    "answer": "正确",
+    "explanation": "持续学习是专业胜任能力和勤勉尽责原则的重要组成部分。"
   }
 ];
 window.QUESTION_BANK_STATS = {
-  "total": 905,
+  "total": 945,
   "byType": {
-    "single": 501,
-    "multiple": 201,
-    "judge": 203
+    "single": 521,
+    "multiple": 211,
+    "judge": 213
   },
   "byCategory": {
     "laws": 730,
     "policy": 45,
-    "ethics": 130
+    "ethics": 130,
+    "prediction": 40
   }
 };

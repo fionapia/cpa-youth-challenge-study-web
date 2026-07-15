@@ -11,6 +11,11 @@ const REVISED_QUESTION_PREFIX = "q2";
 
 const CATEGORY_RULES = [
   {
+    id: "prediction",
+    title: "预测押题",
+    match: (file) => file.includes("预测押题"),
+  },
+  {
     id: "policy",
     title: "行业重要政策性文件",
     match: (file, section) => !file.includes("机考冲刺") && section.includes("政策"),
@@ -48,6 +53,10 @@ const CATEGORY_RULES = [
 ];
 
 const TAG_RULES = [
+  {
+    id: "prediction",
+    match: (file) => file.includes("预测押题"),
+  },
   {
     id: "cram",
     match: (file) => file.includes("机考冲刺"),

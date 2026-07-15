@@ -1,7 +1,7 @@
 const STORAGE_KEY = "daqh_quiz_progress_v1";
 const CLIENT_ID_KEY = "daqh_quiz_client_id_v1";
 const SYNC_TABLE = "quiz_sync_states";
-const APP_VERSION = "20260711-question-bank-905-r2";
+const APP_VERSION = "20260715-prediction-945";
 
 const CATEGORIES = [
   { id: "all", title: "全部试题", className: "card-all" },
@@ -9,6 +9,7 @@ const CATEGORIES = [
   { id: "policy", title: "行业重要政策性文件", className: "card-policy" },
   { id: "ethics", title: "行业史与职业道德", className: "card-ethics" },
   { id: "cram", title: "机考冲刺", className: "card-cram" },
+  { id: "prediction", title: "预测押题", className: "card-prediction" },
 ];
 
 const TYPE_LABELS = {

@@ -359,6 +359,10 @@ button {
   background: #4178f2;
 }
 
+.card-prediction {
+  background: #b9475a;
+}
+
 .practice-layout {
   display: grid;
   grid-template-columns: 340px minmax(0, 1fr);
